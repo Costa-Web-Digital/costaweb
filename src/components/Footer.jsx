@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-[var(--text-primary)] mb-4">Links Rápidos</h4>
+            <h3 className="font-semibold text-[var(--text-primary)] mb-4">Links Rápidos</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-[var(--text-primary)] mb-4">Serviços</h4>
+            <h3 className="font-semibold text-[var(--text-primary)] mb-4">Serviços</h3>
             <ul className="space-y-3">
               {services.map((link) => (
                 <li key={link.label}>
@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-[var(--text-primary)] mb-4">Contato</h4>
+            <h3 className="font-semibold text-[var(--text-primary)] mb-4">Contato</h3>
             <div className="space-y-3">
               <a
                 href="https://wa.me/5511999639567"
