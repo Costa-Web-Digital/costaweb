@@ -1,14 +1,17 @@
 {
   "name": "costaweb",
+  "description": "Site institucional da CostaWeb - agência digital especializada em desenvolvimento web, UI/UX e marketing digital",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "CostaWeb",
+  "homepage": "https://costa-web-digital.github.io/costaweb",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^1.7.0",
