@@ -60,7 +60,7 @@ costaweb/
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/vinicius-costa/costaweb.git
+git clone https://github.com/Costa-Web-Digital/costaweb.git
 cd costaweb
 
 # Instalar dependências
