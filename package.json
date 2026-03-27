@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "type": "module",
   "author": "CostaWeb",
-  "homepage": "https://costa-web-digital.github.io/costaweb",
+  "homepage": "https://costaweb.com.br",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
