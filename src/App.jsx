@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import Process from './components/Process';
-import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
@@ -20,7 +19,6 @@ function App() {
 					<Services />
 					<WhyChooseUs />
 					<Process />
-					<Portfolio />
 					<Testimonials />
 					<FAQ />
 					<FinalCTA />
