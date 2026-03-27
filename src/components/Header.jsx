@@ -69,7 +69,7 @@ export default function Header() {
               href="#contato"
               className="hidden md:flex items-center gap-2 gradient-bg text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity"
             >
-              Falar no WhatsApp
+              Entre em contato agora
               <ArrowRight className="w-4 h-4" />
             </a>
 
