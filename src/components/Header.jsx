@@ -91,7 +91,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 gradient-bg text-white px-5 py-3 rounded-xl font-semibold"
               >
-                Falar no WhatsApp
+                Entre em contato agora
                 <ArrowRight className="w-4 h-4" />
               </a>
             </nav>
