@@ -2,107 +2,107 @@ import { useEffect, useRef, useState } from 'react';
 import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
-  {
-    name: 'Carlos Eduardo',
-    role: 'CEO, TechStore',
-    content: 'Nossa conversão tripled após o novo site. A CostaWeb entendeu exatamente o que precisávamos e entregou além do esperado. Recomendo demais!',
-    rating: 5,
-  },
-  {
-    name: 'Mariana Silva',
-    role: 'Diretora, HealthClinic',
-    content: 'Equipe muito profissional e atenciosa. O site ficou lindo e as campanhas de Ads trouxe pacientes qualificados. ROI super positivo!',
-    rating: 5,
-  },
-  {
-    name: 'Roberto Ferreira',
-    role: 'Fundador, FinanceHub',
-    content: '转型 do nosso negócio online foi completa. Site rápido, bonito e funcional. O suporte pós-entrega também é excelente.',
-    rating: 5,
-  },
+	{
+		name: 'Carlos Eduardo',
+		role: 'CEO, TechStore',
+		content: 'Nossa conversão tripled após o novo site. A CostaWeb entendeu exatamente o que precisávamos e entregou além do esperado. Recomendo demais!',
+		rating: 5,
+	},
+	{
+		name: 'Mariana Silva',
+		role: 'Diretora, HealthClinic',
+		content: 'Equipe muito profissional e atenciosa. O site ficou lindo e as campanhas de Ads trouxe pacientes qualificados. ROI super positivo!',
+		rating: 5,
+	},
+	{
+		name: 'Roberto Ferreira',
+		role: 'Fundador, FinanceHub',
+		content: '转型 do nosso negócio online foi completa. Site rápido, bonito e funcional. O suporte pós-entrega também é excelente.',
+		rating: 5,
+	},
 ];
 
 export default function Testimonials() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
+	const [isVisible, setIsVisible] = useState(false);
+	const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					setIsVisible(true);
+				}
+			},
+			{ threshold: 0.1 }
+		);
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+		if (sectionRef.current) {
+			observer.observe(sectionRef.current);
+		}
 
-    return () => observer.disconnect();
-  }, []);
+		return () => observer.disconnect();
+	}, []);
 
-  return (
-    <section
-      ref={sectionRef}
-      className="py-20 bg-[var(--bg-primary)]"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className={`text-center mb-16 transition-all duration-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            O que dizem nossos <span className="gradient-text">Clientes</span>
-          </h2>
-          <p className="text-[var(--text-muted)] max-w-2xl mx-auto">
-            A opinião de quem já trabalha conosco é o maior indikator de qualidade. 
-            Aqui estão alguns feedbacks.
-          </p>
-        </div>
+	return (
+		<section
+			ref={sectionRef}
+			className="py-20 bg-[var(--bg-primary)]"
+		>
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div
+					className={`text-center mb-16 transition-all duration-700 ${
+						isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+					}`}
+				>
+					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
+						O que dizem nossos <span className="gradient-text">Clientes</span>
+					</h2>
+					<p className="text-[var(--text-muted)] max-w-2xl mx-auto">
+						A opinião de quem já trabalha conosco é o maior indikator de qualidade. 
+						Aqui estão alguns feedbacks.
+					</p>
+				</div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.name}
-              className={`relative glass rounded-2xl p-6 border border-[var(--glass-border)] transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
-            >
-              <Quote className="absolute top-4 right-4 w-8 h-8 text-[var(--color-primary)] opacity-20" />
-              
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
+				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+					{testimonials.map((testimonial, index) => (
+						<div
+							key={testimonial.name}
+							className={`relative glass rounded-2xl p-6 border border-[var(--glass-border)] transition-all duration-700 ${
+								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+							}`}
+							style={{ transitionDelay: `${index * 100}ms` }}
+						>
+							<Quote className="absolute top-4 right-4 w-8 h-8 text-[var(--color-primary)] opacity-20" />
+							
+							<div className="flex gap-1 mb-4">
+								{[...Array(testimonial.rating)].map((_, i) => (
+									<Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+								))}
+							</div>
 
-              <p className="text-[var(--text-secondary)] mb-6 leading-relaxed">
-                "{testimonial.content}"
-              </p>
+							<p className="text-[var(--text-secondary)] mb-6 leading-relaxed">
+								"{testimonial.content}"
+							</p>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
-                  <span className="text-white font-semibold">
-                    {testimonial.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
-                <div>
-                  <p className="font-semibold text-[var(--text-primary)]">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-sm text-[var(--text-muted)]">
-                    {testimonial.role}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+							<div className="flex items-center gap-4">
+								<div className="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
+									<span className="text-white font-semibold">
+										{testimonial.name.split(' ').map(n => n[0]).join('')}
+									</span>
+								</div>
+								<div>
+									<p className="font-semibold text-[var(--text-primary)]">
+										{testimonial.name}
+									</p>
+									<p className="text-sm text-[var(--text-muted)]">
+										{testimonial.role}
+									</p>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+	);
 }

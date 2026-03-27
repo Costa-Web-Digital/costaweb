@@ -11,24 +11,24 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 
 function App() {
-  return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-[var(--bg-primary)]">
-        <Header />
-        <main>
-          <Hero />
-          <Services />
-          <WhyChooseUs />
-          <Process />
-          <Portfolio />
-          <Testimonials />
-          <FAQ />
-          <FinalCTA />
-        </main>
-        <Footer />
-      </div>
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider>
+			<div className="min-h-screen bg-[var(--bg-primary)]">
+				<Header />
+				<main>
+					<Hero />
+					<Services />
+					<WhyChooseUs />
+					<Process />
+					<Portfolio />
+					<Testimonials />
+					<FAQ />
+					<FinalCTA />
+				</main>
+				<Footer />
+			</div>
+		</ThemeProvider>
+	);
 }
 
 export default App;
