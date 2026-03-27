@@ -21,7 +21,8 @@ Site institucional da **CostaWeb**, agência digital especializada em desenvolvi
 ```
 costaweb/
 ├── public/
-│   ├── favicon.svg          # Ícone do site
+│   ├── favicon.png          # Ícone do site (PNG)
+│   ├── og-image.png         # Imagem de compartilhamento social (OpenGraph)
 │   └── icons.svg            # Sprite de ícones
 ├── src/
 │   ├── assets/
@@ -41,11 +42,24 @@ costaweb/
 │   ├── App.jsx              # Componente raiz
 │   ├── index.css            # Estilos globais e tokens CSS
 │   └── main.jsx             # Entry point React
-├── index.html               # HTML base com meta tags e fontes
+├── index.html               # HTML base com meta tags SEO, OpenGraph e fontes
 ├── vite.config.js           # Configuração do Vite + Tailwind
 ├── eslint.config.js         # Regras de lint
 └── package.json
 ```
+
+---
+
+## SEO & Meta Tags
+
+O site está otimizado para motores de busca e compartilhamento em redes sociais:
+
+- **Meta Description**: Descrição concisa e otimizada para buscadores.
+- **OpenGraph**: Suporte completo para Facebook, WhatsApp e LinkedIn (og:title, og:description, og:image).
+- **Twitter Cards**: Visualização rica no Twitter/X.
+- **Favicon**: Ícone em alta resolução (192x192+).
+
+---
 
 ---
 
