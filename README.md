@@ -101,7 +101,7 @@ npm run deploy
 
 O script executa `vite build` e envia o conteúdo de `dist/` para a branch `gh-pages`.
 
-> A propriedade `base: '/costaweb/'` no `vite.config.js` garante que os assets sejam referenciados corretamente no sub-caminho do GitHub Pages.
+> A propriedade `base: '/'` no `vite.config.js` garante que os assets sejam referenciados corretamente no domínio personalizado `costaweb.com.br`.
 
 ---
 
