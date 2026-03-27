@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, ArrowRight } from 'lucide-react';
-import { useTheme } from './ThemeContext';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 export default function Header() {
-  const { isDark, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -53,18 +51,6 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-xl bg-[var(--bg-secondary)] hover:bg-[var(--border-color)] transition-colors"
-              aria-label="Alternar tema"
-            >
-              {isDark ? (
-                <Sun className="w-5 h-5 text-[var(--text-primary)]" />
-              ) : (
-                <Moon className="w-5 h-5 text-[var(--text-primary)]" />
-              )}
-            </button>
-
             <a
               href="#contato"
               className="hidden md:flex items-center gap-2 gradient-bg text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity"

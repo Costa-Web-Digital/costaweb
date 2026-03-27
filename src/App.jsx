@@ -1,4 +1,3 @@
-import { ThemeProvider } from './components/ThemeContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -12,22 +11,20 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-[var(--bg-primary)]">
-        <Header />
-        <main>
-          <Hero />
-          <Services />
-          <WhyChooseUs />
-          <Process />
-          <Portfolio />
-          <Testimonials />
-          <FAQ />
-          <FinalCTA />
-        </main>
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen bg-[var(--bg-primary)]">
+      <Header />
+      <main>
+        <Hero />
+        <Services />
+        <WhyChooseUs />
+        <Process />
+        <Portfolio />
+        <Testimonials />
+        <FAQ />
+        <FinalCTA />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
