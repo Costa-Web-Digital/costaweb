@@ -36,7 +36,6 @@ costaweb/
 │   │   ├── Services.jsx     # Serviços oferecidos
 │   │   ├── WhyChooseUs.jsx  # Diferenciais da agência
 │   │   ├── Process.jsx      # Processo de trabalho
-│   │   ├── Portfolio.jsx    # Projetos em destaque (Oculto)
 │   │   ├── Testimonials.jsx # Depoimentos de clientes
 │   │   ├── FAQ.jsx          # Perguntas frequentes
 │   │   ├── FinalCTA.jsx     # Call-to-action final
@@ -131,4 +130,8 @@ O script executa `vite build` e envia o conteúdo de `dist/` para a branch `gh-p
 
 ## Licença
 
-Projeto privado. Todos os direitos reservados © CostaWeb.
+---
+
+## Atualizações
+
+- **v1.1.1**: Teste de integração de notificações via Telegram.
