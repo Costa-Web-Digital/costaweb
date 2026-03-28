@@ -7,6 +7,8 @@
 
 	--font-display: 'Clash Display', sans-serif;
 	--font-body: 'DM Sans', sans-serif;
+
+	--line-height-tight: 1;
 }
 
 :root {
