@@ -51,6 +51,13 @@ html {
 		border: 1px solid var(--glass-border);
 	}
 
+	.glass-dark {
+		background: rgba(26, 10, 46, 0.3);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
 	.card-hover {
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}

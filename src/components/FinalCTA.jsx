@@ -57,7 +57,7 @@ export default function FinalCTA() {
 						</a>
 						<a
 							href="#servicos"
-							className="inline-flex items-center gap-2 glass text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors"
+							className="inline-flex items-center gap-2 glass-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all border border-white/10"
 						>
 							Ver serviços
 							<ArrowRight className="w-5 h-5" />
