@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
 import { Code, FileText, Headphones, PenTool, Rocket } from 'lucide-react';
+import { useInView } from '../hooks/useInView';
 
 const steps = [
 	{
@@ -30,25 +30,7 @@ const steps = [
 ];
 
 export default function Process() {
-	const [isVisible, setIsVisible] = useState(false);
-	const sectionRef = useRef(null);
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting) {
-					setIsVisible(true);
-				}
-			},
-			{ threshold: 0.1 },
-		);
-
-		if (sectionRef.current) {
-			observer.observe(sectionRef.current);
-		}
-
-		return () => observer.disconnect();
-	}, []);
+	const [isVisible, sectionRef] = useInView();
 
 	return (
 		<section

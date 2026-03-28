@@ -1,32 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useScrollTo } from '../hooks/useScrollTo';
+import { useInView } from '../hooks/useInView';
 
 export default function Hero() {
-	const [isVisible, setIsVisible] = useState(false);
-	const heroRef = useRef(null);
+	const [isVisible, sectionRef] = useInView();
 	const scrollTo = useScrollTo();
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting) {
-					setIsVisible(true);
-				}
-			},
-			{ threshold: 0.1 },
-		);
-
-		if (heroRef.current) {
-			observer.observe(heroRef.current);
-		}
-
-		return () => observer.disconnect();
-	}, []);
 
 	return (
 		<section
-			ref={heroRef}
+			ref={sectionRef}
 			className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden"
 		>
 			<div className="absolute inset-0 bg-[var(--color-bg-secondary)]" />

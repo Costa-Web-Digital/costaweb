@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Database, Globe, Monitor, Search, TrendingUp } from 'lucide-react';
 import { useScrollTo } from '../hooks/useScrollTo';
+import { useInView } from '../hooks/useInView';
 
 const services = [
 	{
@@ -31,26 +31,8 @@ const services = [
 ];
 
 export default function Services() {
-	const [isVisible, setIsVisible] = useState(false);
-	const sectionRef = useRef(null);
+	const [isVisible, sectionRef] = useInView();
 	const scrollTo = useScrollTo();
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting) {
-					setIsVisible(true);
-				}
-			},
-			{ threshold: 0.1 },
-		);
-
-		if (sectionRef.current) {
-			observer.observe(sectionRef.current);
-		}
-
-		return () => observer.disconnect();
-	}, []);
 
 	return (
 		<section

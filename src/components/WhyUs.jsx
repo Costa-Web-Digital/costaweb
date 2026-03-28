@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
 import { Headphones, Shield, TrendingUp, Zap } from 'lucide-react';
+import { useInView } from '../hooks/useInView';
 
 const features = [
 	{
@@ -33,25 +33,7 @@ const features = [
 ];
 
 export default function WhyUs() {
-	const [isVisible, setIsVisible] = useState(false);
-	const sectionRef = useRef(null);
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting) {
-					setIsVisible(true);
-				}
-			},
-			{ threshold: 0.1 },
-		);
-
-		if (sectionRef.current) {
-			observer.observe(sectionRef.current);
-		}
-
-		return () => observer.disconnect();
-	}, []);
+	const [isVisible, sectionRef] = useInView();
 
 	return (
 		<section

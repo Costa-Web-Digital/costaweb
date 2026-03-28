@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { useInView } from '../hooks/useInView';
 
 const faqs = [
 	{
@@ -29,26 +30,8 @@ const faqs = [
 ];
 
 export default function FAQ() {
-	const [isVisible, setIsVisible] = useState(false);
+	const [isVisible, sectionRef] = useInView();
 	const [openIndex, setOpenIndex] = useState(null);
-	const sectionRef = useRef(null);
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting) {
-					setIsVisible(true);
-				}
-			},
-			{ threshold: 0.1 },
-		);
-
-		if (sectionRef.current) {
-			observer.observe(sectionRef.current);
-		}
-
-		return () => observer.disconnect();
-	}, []);
 
 	const toggleFAQ = (index) => {
 		setOpenIndex(openIndex === index ? null : index);
