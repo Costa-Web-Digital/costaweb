@@ -1,35 +1,38 @@
+import { Link } from 'react-router-dom';
 import { Mail, MessageCircle } from 'lucide-react';
+import { useScrollTo } from '../hooks/useScrollTo';
 
 const quickLinks = [
-	{ label: 'Serviços', href: '#servicos' },
-	{ label: 'Por que nós', href: '#porque-nos' },
-	{ label: 'Processo', href: '#processo' },
-	{ label: 'Portfólio', href: '#portfolio' },
-	{ label: 'FAQ', href: '#faq' },
+	{ label: 'Serviços', id: 'servicos' },
+	{ label: 'Por que nós', id: 'porque-nos' },
+	{ label: 'Processo', id: 'processo' },
+	{ label: 'FAQ', id: 'faq' },
 ];
 
 const services = [
-	{ label: 'Landing Pages', href: '#servicos' },
-	{ label: 'Sites Estáticos', href: '#servicos' },
-	{ label: 'Sites Dinâmicos', href: '#servicos' },
-	{ label: 'SEO', href: '#servicos' },
-	{ label: 'Tráfego Pago', href: '#servicos' },
+	{ label: 'Landing Pages', id: 'servicos' },
+	{ label: 'Sites Estáticos', id: 'servicos' },
+	{ label: 'Sites Dinâmicos', id: 'servicos' },
+	{ label: 'SEO', id: 'servicos' },
+	{ label: 'Tráfego Pago', id: 'servicos' },
 ];
 
 export default function Footer() {
+	const scrollTo = useScrollTo();
+
 	return (
 		<footer className="py-16 bg-[var(--bg-primary)] border-t border-[var(--border-color)]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 					<div>
-						<a href="#" className="flex items-center gap-2 mb-4">
+						<Link to="/" className="flex items-center gap-2 mb-4">
 							<div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
 								<span className="text-white font-bold text-xl font-[var(--font-display)]">C</span>
 							</div>
 							<span className="text-xl font-bold font-[var(--font-display)] text-[var(--text-primary)]">
 								CostaWeb
 							</span>
-						</a>
+						</Link>
 						<p className="text-[var(--text-muted)] text-sm mb-6">
 							Agência digital completa. Transformamos negócios através de soluções
 							digitais que geram resultados reais.
@@ -93,17 +96,16 @@ export default function Footer() {
 					</div>
 
 					<div>
-						<h3 className="font-semibold text-[var(--text-primary)] mb-4">Links
-							Rápidos</h3>
+						<h3 className="font-semibold text-[var(--text-primary)] mb-4">Links Rápidos</h3>
 						<ul className="space-y-3">
 							{quickLinks.map((link) => (
 								<li key={link.label}>
-									<a
-										href={link.href}
-										className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
+									<button
+										onClick={() => scrollToSection(link.id)}
+										className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
 									>
 										{link.label}
-									</a>
+									</button>
 								</li>
 							))}
 						</ul>
@@ -114,12 +116,12 @@ export default function Footer() {
 						<ul className="space-y-3">
 							{services.map((link) => (
 								<li key={link.label}>
-									<a
-										href={link.href}
-										className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
+									<button
+										onClick={() => scrollToSection(link.id)}
+										className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
 									>
 										{link.label}
-									</a>
+									</button>
 								</li>
 							))}
 						</ul>
@@ -153,18 +155,18 @@ export default function Footer() {
 						© 2025 CostaWeb. Todos os direitos reservados.
 					</p>
 					<div className="flex gap-6">
-						<a
-							href="#"
+						<Link
+							to="/politica-de-privacidade"
 							className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
 						>
 							Política de Privacidade
-						</a>
-						<a
-							href="#"
-							className="text-[var(--text-muted)] hover:text(--color-primary)] transition-colors text-sm"
+						</Link>
+						<Link
+							to="/termos-de-uso"
+							className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
 						>
 							Termos de Uso
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

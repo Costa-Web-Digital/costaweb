@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, MessageCircle } from 'lucide-react';
+import { useScrollTo } from '../hooks/useScrollTo';
 
 export default function FinalCTA() {
 	const [isVisible, setIsVisible] = useState(false);
 	const sectionRef = useRef(null);
+	const scrollTo = useScrollTo();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -55,13 +57,13 @@ export default function FinalCTA() {
 							<MessageCircle className="w-5 h-5" />
 							Falar no WhatsApp
 						</a>
-						<a
-							href="#servicos"
-							className="inline-flex items-center gap-2 glass-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all border border-white/10"
+						<button
+							onClick={() => scrollTo('servicos')}
+							className="inline-flex items-center gap-2 glass-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all border border-white/10 cursor-pointer"
 						>
 							Ver serviços
 							<ArrowRight className="w-5 h-5" />
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>
