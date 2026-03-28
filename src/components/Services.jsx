@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Database, Globe, Monitor, Search, TrendingUp } from 'lucide-react';
+import { useScrollTo } from '../hooks/useScrollTo';
 
 const services = [
 	{
@@ -32,6 +33,7 @@ const services = [
 export default function Services() {
 	const [isVisible, setIsVisible] = useState(false);
 	const sectionRef = useRef(null);
+	const scrollTo = useScrollTo();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -93,13 +95,13 @@ export default function Services() {
 								{service.description}
 							</p>
 
-							<a
-								href="#contato"
-								className="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:gap-3 transition-all"
+							<button
+								onClick={() => scrollTo('contato')}
+								className="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:gap-3 transition-all cursor-pointer bg-transparent border-0 p-0"
 							>
 								Saber mais
 								<ArrowRight className="w-4 h-4" />
-							</a>
+							</button>
 						</div>
 					))}
 				</div>

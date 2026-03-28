@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useScrollTo } from '../hooks/useScrollTo';
 
 export default function Hero() {
 	const [isVisible, setIsVisible] = useState(false);
 	const heroRef = useRef(null);
+	const scrollTo = useScrollTo();
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -55,13 +57,13 @@ export default function Hero() {
 						</p>
 
 						<div className="flex flex-wrap gap-4">
-							<a
-								href="#contato"
-								className="inline-flex items-center gap-2 gradient-bg text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity"
+							<button
+								onClick={() => scrollTo('contato')}
+								className="inline-flex items-center gap-2 gradient-bg text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
 							>
 								Quero meu site agora
 								<ArrowRight className="w-5 h-5" />
-							</a>
+							</button>
 						</div>
 
 						<div className="flex items-center gap-8 mt-10">

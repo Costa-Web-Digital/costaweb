@@ -14,6 +14,7 @@ GitHub Pages.
 | **Vite**         | 8      | Bundler e servidor de desenvolvimento  |
 | **Tailwind CSS** | 4      | Estilização utilitária via plugin Vite |
 | **Lucide React** | Latest | Ícones SVG otimizados                  |
+| **React Router** | 7      | Navegação e roteamento do site         |
 | **gh-pages**     | 6      | Deploy automatizado no GitHub Pages    |
 
 ---
@@ -35,13 +36,17 @@ costaweb/
 │   │   ├── Services.jsx     # Serviços oferecidos
 │   │   ├── WhyChooseUs.jsx  # Diferenciais da agência
 │   │   ├── Process.jsx      # Processo de trabalho
-│   │   ├── Portfolio.jsx    # Projetos em destaque
+│   │   ├── Portfolio.jsx    # Projetos em destaque (Oculto)
 │   │   ├── Testimonials.jsx # Depoimentos de clientes
 │   │   ├── FAQ.jsx          # Perguntas frequentes
 │   │   ├── FinalCTA.jsx     # Call-to-action final
-│   │   ├── Footer.jsx       # Rodapé com links e contato
-│   │   └── ThemeContext.jsx # Contexto de tema claro/escuro
-│   ├── App.jsx              # Componente raiz
+│   │   └── Footer.jsx       # Rodapé com links e contato
+│   ├── hooks/
+│   │   └── useScrollTo.js   # Utilitário de scroll e navegação
+│   ├── pages/
+│   │   ├── PrivacyPolicy.jsx # Página de política de privacidade
+│   │   └── TermsOfUse.jsx    # Página de termos de uso
+│   ├── App.jsx              # Componente raiz com roteamento
 │   ├── index.css            # Estilos globais e tokens CSS
 │   └── main.jsx             # Entry point React
 ├── index.html               # HTML base com meta tags SEO, OpenGraph e fontes
