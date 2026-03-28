@@ -40,7 +40,7 @@ export default function Hero() {
 							isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 						}`}
 					>
-						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-none">
 							Seu negócio
 							<div className="gradient-text">na internet</div>
 							do jeito certo
