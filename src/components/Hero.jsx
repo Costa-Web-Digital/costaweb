@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
 	const [isVisible, setIsVisible] = useState(false);
@@ -40,13 +40,6 @@ export default function Hero() {
 							isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 						}`}
 					>
-						<div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6">
-							<Sparkles className="w-4 h-4 text-[var(--color-primary)]" />
-							<span className="text-sm text-[var(--text-secondary)]">
-								Agência digital completa
-							</span>
-						</div>
-
 						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
 							Seu negócio
 							<div className="gradient-text">na internet</div>
