@@ -21,7 +21,7 @@ export default function Footer() {
 	const scrollTo = useScrollTo();
 
 	return (
-		<footer className="py-16 bg-[var(--bg-primary)] border-t border-[var(--border-color)]">
+		<footer className="py-16 bg-[var(--color-bg-primary)] border-t border-[var(--color-border)]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 					<div>
@@ -33,14 +33,14 @@ export default function Footer() {
 								CostaWeb
 							</span>
 						</Link>
-						<p className="text-[var(--text-muted)] text-sm mb-6">
+						<p className="text-[var(--color-text-muted)] text-sm mb-6">
 							Agência digital completa. Transformamos negócios através de soluções
 							digitais que geram resultados reais.
 						</p>
 						<div className="flex gap-3">
 							<a
 								href="#"
-								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--border-color)] transition-colors"
+								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--color-border)] transition-colors"
 								aria-label="Instagram"
 							>
 								<svg
@@ -55,7 +55,7 @@ export default function Footer() {
 							</a>
 							<a
 								href="#"
-								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--border-color)] transition-colors"
+								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--color-border)] transition-colors"
 								aria-label="LinkedIn"
 							>
 								<svg
@@ -68,7 +68,7 @@ export default function Footer() {
 							</a>
 							<a
 								href="#"
-								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--border-color)] transition-colors"
+								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--color-border)] transition-colors"
 								aria-label="Facebook"
 							>
 								<svg
@@ -81,7 +81,7 @@ export default function Footer() {
 							</a>
 							<a
 								href="#"
-								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--border-color)] transition-colors"
+								className="w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-[var(--color-border)] transition-colors"
 								aria-label="Twitter"
 							>
 								<svg
@@ -102,7 +102,7 @@ export default function Footer() {
 								<li key={link.label}>
 									<button
 										onClick={() => scrollToSection(link.id)}
-										className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
+										className="text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
 									>
 										{link.label}
 									</button>
@@ -118,7 +118,7 @@ export default function Footer() {
 								<li key={link.label}>
 									<button
 										onClick={() => scrollToSection(link.id)}
-										className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
+										className="text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
 									>
 										{link.label}
 									</button>
@@ -134,14 +134,14 @@ export default function Footer() {
 								href="https://wa.me/5511999639567"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="flex items-center gap-3 text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors"
+								className="flex items-center gap-3 text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
 							>
 								<MessageCircle className="w-5 h-5" />
 								<span className="text-sm">(11) 99963-9567</span>
 							</a>
 							<a
 								href="mailto:contato@costaweb.com.br"
-								className="flex items-center gap-3 text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors"
+								className="flex items-center gap-3 text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
 							>
 								<Mail className="w-5 h-5" />
 								<span className="text-sm">contato@costaweb.com.br</span>
@@ -150,20 +150,20 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className="pt-8 border-t border-[var(--border-color)] flex flex-col sm:flex-row items-center justify-between gap-4">
-					<p className="text-[var(--text-muted)] text-sm">
+				<div className="pt-8 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-center justify-between gap-4">
+					<p className="text-[var(--color-text-muted)] text-sm">
 						© 2025 CostaWeb. Todos os direitos reservados.
 					</p>
 					<div className="flex gap-6">
 						<Link
 							to="/politica-de-privacidade"
-							className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
+							className="text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
 						>
 							Política de Privacidade
 						</Link>
 						<Link
 							to="/termos-de-uso"
-							className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
+							className="text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors text-sm"
 						>
 							Termos de Uso
 						</Link>

@@ -56,7 +56,7 @@ export default function Services() {
 		<section
 			id="servicos"
 			ref={sectionRef}
-			className="py-20 bg-[var(--bg-primary)]"
+			className="py-20 bg-[var(--color-bg-primary)]"
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
@@ -67,7 +67,7 @@ export default function Services() {
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
 						Nossos <span className="gradient-text">Serviços</span>
 					</h2>
-					<p className="text-[var(--text-muted)] max-w-2xl mx-auto">
+					<p className="text-[var(--color-text-muted)] max-w-2xl mx-auto">
 						Solutions complete para fazer seu negócio decolar no digital.
 						Do design ao tráfego, cuidamos de tudo para você focar no que sabe fazer
 						melhor.
@@ -78,7 +78,7 @@ export default function Services() {
 					{services.map((service, index) => (
 						<div
 							key={service.title}
-							className={`group glass rounded-2xl p-6 border border-[var(--glass-border)] card-hover transition-all duration-700 ${
+							className={`group glass rounded-2xl p-6 border border-[var(--color-glass-border)] card-hover transition-all duration-700 ${
 								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 							}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
@@ -91,7 +91,7 @@ export default function Services() {
 								{service.title}
 							</h3>
 
-							<p className="text-[var(--text-muted)] mb-5 text-sm leading-relaxed">
+							<p className="text-[var(--color-text-muted)] mb-5 text-sm leading-relaxed">
 								{service.description}
 							</p>
 

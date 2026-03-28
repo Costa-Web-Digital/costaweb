@@ -42,7 +42,7 @@ export default function Header() {
 							<button
 								key={link.id}
 								onClick={() => scrollTo(link.id)}
-								className="text-[var(--text-secondary)] hover:text-[var(--color-primary)] transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
+								className="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
 							>
 								{link.label}
 							</button>
@@ -60,7 +60,7 @@ export default function Header() {
 
 						<button
 							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-							className="md:hidden p-2 rounded-xl bg-[var(--bg-secondary)]"
+							className="md:hidden p-2 rounded-xl bg-[var(--color-bg-secondary)]"
 							aria-label="Menu"
 						>
 							{mobileMenuOpen ? (
@@ -79,7 +79,7 @@ export default function Header() {
 								<button
 									key={link.id}
 									onClick={() => { scrollTo(link.id); setMobileMenuOpen(false); }}
-									className="text-left text-[var(--text-secondary)] hover:text-[var(--color-primary)] transition-colors font-medium py-2 cursor-pointer bg-transparent border-0 w-full"
+									className="text-left text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors font-medium py-2 cursor-pointer bg-transparent border-0 w-full"
 								>
 									{link.label}
 								</button>
