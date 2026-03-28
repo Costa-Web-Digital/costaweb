@@ -72,8 +72,6 @@ export default function Process() {
 				</div>
 
 				<div className="relative">
-					<div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-secondary)] to-[var(--color-accent)] -translate-y-1/2 rounded-full opacity-30" />
-
 					<div className="grid lg:grid-cols-5 gap-8">
 						{steps.map((step, index) => (
 							<div
