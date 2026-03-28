@@ -12,7 +12,7 @@ export default function Hero() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (heroRef.current) {
@@ -22,16 +22,16 @@ export default function Hero() {
 		return () => observer.disconnect();
 	}, []);
 
-  return (
-    <section
-      ref={heroRef}
-      className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-[var(--bg-secondary)]" />
+	return (
+		<section
+			ref={heroRef}
+			className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden"
+		>
+			<div className="absolute inset-0 bg-[var(--bg-secondary)]" />
 
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[var(--color-primary)] opacity-10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-[var(--color-secondary)] opacity-10 rounded-full blur-3xl" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--color-accent)] opacity-5 rounded-full blur-3xl" />
+			<div className="absolute top-20 left-10 w-72 h-72 bg-[var(--color-primary)] opacity-10 rounded-full blur-3xl" />
+			<div className="absolute bottom-20 right-10 w-96 h-96 bg-[var(--color-secondary)] opacity-10 rounded-full blur-3xl" />
+			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--color-accent)] opacity-5 rounded-full blur-3xl" />
 
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -47,17 +47,19 @@ export default function Hero() {
 							</span>
 						</div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Seu negócio
+						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+							Seu negócio
 							<div className="gradient-text">na internet</div>
 							do jeito certo
 						</h1>
 
-            <p className="text-lg text-[var(--text-muted)] mb-8 max-w-xl">
-				Não importa se você é autônomo ou tem dezenas de funcionários. Nós transformamos sua
-				presença online com sites, sistemas e estratégias de tráfego que geram resultados
-				reais para o seu negócio.
-            </p>
+						<p className="text-lg text-[var(--text-muted)] mb-8 max-w-xl">
+							Não importa se você é autônomo ou tem dezenas de funcionários. Nós
+							transformamos sua
+							presença online com sites, sistemas e estratégias de tráfego que geram
+							resultados
+							reais para o seu negócio.
+						</p>
 
 						<div className="flex flex-wrap gap-4">
 							<a
@@ -75,49 +77,50 @@ export default function Hero() {
 							</a>
 						</div>
 
-            <div className="flex items-center gap-8 mt-10">
-              <div>
-				<p className="text-3xl font-bold gradient-text">15 anos</p>
-				<p className="text-sm text-[var(--text-muted)]">de experiência</p>
-              </div>
-              <div className="w-px h-12 bg-[var(--border-color)]" />
-              <div>
-                <p className="text-3xl font-bold gradient-text">98%</p>
-                <p className="text-sm text-[var(--text-muted)]">clientes satisfeitos</p>
-              </div>
-              <div className="w-px h-12 bg-[var(--border-color)]" />
-              <div>
-				<p className="text-3xl font-bold gradient-text">50</p>
-				<p className="text-sm text-[var(--text-muted)]">sites entregues</p>
+						<div className="flex items-center gap-8 mt-10">
+							<div>
+								<p className="text-3xl font-bold gradient-text">15 anos</p>
+								<p className="text-sm text-[var(--text-muted)]">de experiência</p>
+							</div>
+							<div className="w-px h-12 bg-[var(--border-color)]" />
+							<div>
+								<p className="text-3xl font-bold gradient-text">98%</p>
+								<p className="text-sm text-[var(--text-muted)]">clientes
+									satisfeitos</p>
+							</div>
+							<div className="w-px h-12 bg-[var(--border-color)]" />
+							<div>
+								<p className="text-3xl font-bold gradient-text">50</p>
+								<p className="text-sm text-[var(--text-muted)]">sites entregues</p>
 							</div>
 						</div>
 					</div>
 
-          <div
-            className={`relative transition-all duration-1000 delay-300 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            <div className="relative animate-float">
-              <div className="absolute inset-0 gradient-bg opacity-20 rounded-3xl blur-2xl" />
+					<div
+						className={`relative transition-all duration-1000 delay-300 ${
+							isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+						}`}
+					>
+						<div className="relative animate-float">
+							<div className="absolute inset-0 gradient-bg opacity-20 rounded-3xl blur-2xl" />
 
-              <div className="relative glass rounded-3xl p-8 border border-[var(--glass-border)]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-red-400" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                    <div className="w-3 h-3 rounded-full bg-green-400" />
-                  </div>
-                  <div className="flex-1 glass px-4 py-1.5 rounded-lg text-sm text-[var(--text-muted)]">
-                    seusite.com.br
+							<div className="relative glass rounded-3xl p-8 border border-[var(--glass-border)]">
+								<div className="flex items-center gap-4 mb-6">
+									<div className="flex gap-2">
+										<div className="w-3 h-3 rounded-full bg-red-400" />
+										<div className="w-3 h-3 rounded-full bg-yellow-400" />
+										<div className="w-3 h-3 rounded-full bg-green-400" />
+									</div>
+									<div className="flex-1 glass px-4 py-1.5 rounded-lg text-sm text-[var(--text-muted)]">
+										seusite.com.br
 									</div>
 								</div>
 
-                <div className="space-y-4">
-                  <div className="h-4 bg-[var(--border-color)] rounded w-3/4" />
-                  <div className="h-4 bg-[var(--border-color)] rounded w-1/2" />
-                  <div className="h-20 gradient-bg rounded-xl flex items-center justify-center">
-                  </div>
+								<div className="space-y-4">
+									<div className="h-4 bg-[var(--border-color)] rounded w-3/4" />
+									<div className="h-4 bg-[var(--border-color)] rounded w-1/2" />
+									<div className="h-20 gradient-bg rounded-xl flex items-center justify-center">
+									</div>
 									<div className="grid grid-cols-3 gap-3">
 										<div className="h-16 bg-[var(--border-color)] rounded-xl" />
 										<div className="h-16 bg-[var(--border-color)] rounded-xl" />

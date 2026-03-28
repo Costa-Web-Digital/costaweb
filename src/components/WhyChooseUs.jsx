@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Zap, Headphones, TrendingUp, Shield } from 'lucide-react';
+import { Headphones, Shield, TrendingUp, Zap } from 'lucide-react';
 
 const features = [
 	{
@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (sectionRef.current) {
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
 						Por que escolher a <span className="gradient-text">CostaWeb?</span>
 					</h2>
 					<p className="text-[var(--text-muted)] max-w-2xl mx-auto">
-						Diferenciais que fazem toda a diferença no seu projeto. 
+						Diferenciais que fazem toda a diferença no seu projeto.
 						Experiência e compromisso com resultados em cada detailhe.
 					</p>
 				</div>

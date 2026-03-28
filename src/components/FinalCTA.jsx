@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { MessageCircle, ArrowRight } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 
 export default function FinalCTA() {
 	const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +12,7 @@ export default function FinalCTA() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (sectionRef.current) {
@@ -34,7 +34,7 @@ export default function FinalCTA() {
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div
 					className={`text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-						}`}
+					}`}
 				>
 					<h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
 						Pronto para crescer online?

@@ -51,7 +51,7 @@ export default function Portfolio() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (sectionRef.current) {
@@ -77,7 +77,7 @@ export default function Portfolio() {
 						Nosso <span className="gradient-text">Portfólio</span>
 					</h2>
 					<p className="text-[var(--text-muted)] max-w-2xl mx-auto">
-						Projetos que мы сделали para empresas que decidiram crescer no digital. 
+						Projetos que мы сделали para empresas que decidiram crescer no digital.
 						Cada projeto é único, mas todos têm algo em comum: resultados.
 					</p>
 				</div>
@@ -93,7 +93,7 @@ export default function Portfolio() {
 						>
 							<div className={`h-48 bg-gradient-to-br ${project.color} relative`}>
 								<div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
-								
+
 								<div className="absolute top-4 left-4">
 									<span className="glass px-3 py-1 rounded-full text-xs font-medium text-white">
 										{project.type}

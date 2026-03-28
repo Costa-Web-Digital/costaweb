@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Quote, Star } from 'lucide-react';
 
 const testimonials = [
 	{
@@ -33,7 +33,7 @@ export default function Testimonials() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (sectionRef.current) {
@@ -58,7 +58,7 @@ export default function Testimonials() {
 						O que dizem nossos <span className="gradient-text">Clientes</span>
 					</h2>
 					<p className="text-[var(--text-muted)] max-w-2xl mx-auto">
-						A opinião de quem já trabalha conosco é o maior indikator de qualidade. 
+						A opinião de quem já trabalha conosco é o maior indikator de qualidade.
 						Aqui estão alguns feedbacks.
 					</p>
 				</div>
@@ -73,10 +73,13 @@ export default function Testimonials() {
 							style={{ transitionDelay: `${index * 100}ms` }}
 						>
 							<Quote className="absolute top-4 right-4 w-8 h-8 text-[var(--color-primary)] opacity-20" />
-							
+
 							<div className="flex gap-1 mb-4">
 								{[...Array(testimonial.rating)].map((_, i) => (
-									<Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+									<Star
+										key={i}
+										className="w-5 h-5 fill-yellow-400 text-yellow-400"
+									/>
 								))}
 							</div>
 

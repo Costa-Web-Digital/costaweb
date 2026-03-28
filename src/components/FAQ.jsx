@@ -40,7 +40,7 @@ export default function FAQ() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (sectionRef.current) {
@@ -96,7 +96,7 @@ export default function FAQ() {
 									}`}
 								/>
 							</button>
-							
+
 							<div
 								className={`overflow-hidden transition-all duration-300 ${
 									openIndex === index ? 'max-h-40' : 'max-h-0'

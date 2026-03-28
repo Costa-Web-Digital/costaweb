@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ArrowRight, Menu, X } from 'lucide-react';
 
 export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);

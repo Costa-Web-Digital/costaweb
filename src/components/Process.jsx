@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { FileText, PenTool, Code, Rocket, Headphones } from 'lucide-react';
+import { Code, FileText, Headphones, PenTool, Rocket } from 'lucide-react';
 
 const steps = [
 	{
@@ -40,7 +40,7 @@ export default function Process() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (sectionRef.current) {
@@ -66,14 +66,14 @@ export default function Process() {
 						Como <span className="gradient-text">Funciona</span>
 					</h2>
 					<p className="text-[var(--text-muted)] max-w-2xl mx-auto">
-						Processo simples e transparente. Você sabe exatamente o que acontece 
+						Processo simples e transparente. Você sabe exatamente o que acontece
 						em cada etapa do seu projeto.
 					</p>
 				</div>
 
 				<div className="relative">
 					<div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-secondary)] to-[var(--color-accent)] -translate-y-1/2 rounded-full opacity-30" />
-					
+
 					<div className="grid lg:grid-cols-5 gap-8">
 						{steps.map((step, index) => (
 							<div
@@ -87,7 +87,7 @@ export default function Process() {
 									<div className="relative z-10 w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mb-4 shadow-lg animate-pulse-glow">
 										<step.icon className="w-9 h-9 text-white" />
 									</div>
-									
+
 									<div className="w-8 h-8 gradient-bg rounded-full flex items-center justify-center mb-3 lg:hidden">
 										<span className="text-white font-bold">{index + 1}</span>
 									</div>

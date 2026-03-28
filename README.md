@@ -1,18 +1,20 @@
 # CostaWeb — Agência Digital
 
-Site institucional da **CostaWeb**, agência digital especializada em desenvolvimento web, UI/UX e marketing digital. Construído com React 19, Vite e Tailwind CSS v4, com deploy automatizado no GitHub Pages.
+Site institucional da **CostaWeb**, agência digital especializada em desenvolvimento web, UI/UX e
+marketing digital. Construído com React 19, Vite e Tailwind CSS v4, com deploy automatizado no
+GitHub Pages.
 
 ---
 
 ## Stack
 
-| Tecnologia | Versão | Uso |
-|---|---|---|
-| **React** | 19 | UI declarativa e componentização |
-| **Vite** | 8 | Bundler e servidor de desenvolvimento |
-| **Tailwind CSS** | 4 | Estilização utilitária via plugin Vite |
-| **Lucide React** | Latest | Ícones SVG otimizados |
-| **gh-pages** | 6 | Deploy automatizado no GitHub Pages |
+| Tecnologia       | Versão | Uso                                    |
+|------------------|--------|----------------------------------------|
+| **React**        | 19     | UI declarativa e componentização       |
+| **Vite**         | 8      | Bundler e servidor de desenvolvimento  |
+| **Tailwind CSS** | 4      | Estilização utilitária via plugin Vite |
+| **Lucide React** | Latest | Ícones SVG otimizados                  |
+| **gh-pages**     | 6      | Deploy automatizado no GitHub Pages    |
 
 ---
 
@@ -55,7 +57,8 @@ costaweb/
 O site está otimizado para motores de busca e compartilhamento em redes sociais:
 
 - **Meta Description**: Descrição concisa e otimizada para buscadores.
-- **OpenGraph**: Suporte completo para Facebook, WhatsApp e LinkedIn (og:title, og:description, og:image).
+- **OpenGraph**: Suporte completo para Facebook, WhatsApp e LinkedIn (og:title, og:description, og:
+  image).
 - **Twitter Cards**: Visualização rica no Twitter/X.
 - **Favicon**: Ícone em alta resolução (192x192+).
 
@@ -85,13 +88,13 @@ npm install
 
 ## Scripts
 
-| Comando | Descrição |
-|---|---|
-| `npm run dev` | Inicia o servidor de desenvolvimento em `localhost:5173` |
-| `npm run build` | Gera o bundle de produção na pasta `dist/` |
-| `npm run preview` | Serve o build de produção localmente |
-| `npm run lint` | Executa o ESLint em todos os arquivos |
-| `npm run deploy` | Faz build e publica no GitHub Pages |
+| Comando           | Descrição                                                |
+|-------------------|----------------------------------------------------------|
+| `npm run dev`     | Inicia o servidor de desenvolvimento em `localhost:5173` |
+| `npm run build`   | Gera o bundle de produção na pasta `dist/`               |
+| `npm run preview` | Serve o build de produção localmente                     |
+| `npm run lint`    | Executa o ESLint em todos os arquivos                    |
+| `npm run deploy`  | Faz build e publica no GitHub Pages                      |
 
 ---
 
@@ -99,7 +102,8 @@ npm install
 
 O projeto utiliza variáveis CSS customizadas para tokens de design, definidas em `src/index.css`:
 
-- **Tipografia**: [Clash Display](https://www.fontshare.com/fonts/clash-display) (headings) + [DM Sans](https://fonts.google.com/specimen/DM+Sans) (body)
+- **Tipografia**: [Clash Display](https://www.fontshare.com/fonts/clash-display) (
+  headings) + [DM Sans](https://fonts.google.com/specimen/DM+Sans) (body)
 - **Tema**: Suporte a modo claro e escuro via `ThemeContext`
 - **Cores**: Palette brutalista controlada por `--bg-primary`, `--text-primary`, `--accent`
 
@@ -115,7 +119,8 @@ npm run deploy
 
 O script executa `vite build` e envia o conteúdo de `dist/` para a branch `gh-pages`.
 
-> A propriedade `base: '/'` no `vite.config.js` garante que os assets sejam referenciados corretamente no domínio personalizado `costaweb.com.br`.
+> A propriedade `base: '/'` no `vite.config.js` garante que os assets sejam referenciados
+> corretamente no domínio personalizado `costaweb.com.br`.
 
 ---
 

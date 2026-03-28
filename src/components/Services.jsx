@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Monitor, Globe, Database, Search, TrendingUp, ArrowRight } from 'lucide-react';
+import { ArrowRight, Database, Globe, Monitor, Search, TrendingUp } from 'lucide-react';
 
 const services = [
 	{
@@ -40,7 +40,7 @@ export default function Services() {
 					setIsVisible(true);
 				}
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (sectionRef.current) {
@@ -66,8 +66,9 @@ export default function Services() {
 						Nossos <span className="gradient-text">Serviços</span>
 					</h2>
 					<p className="text-[var(--text-muted)] max-w-2xl mx-auto">
-						Solutions complete para fazer seu negócio decolar no digital. 
-						Do design ao tráfego, cuidamos de tudo para você focar no que sabe fazer melhor.
+						Solutions complete para fazer seu negócio decolar no digital.
+						Do design ao tráfego, cuidamos de tudo para você focar no que sabe fazer
+						melhor.
 					</p>
 				</div>
 
