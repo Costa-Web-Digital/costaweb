@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import WhyChooseUs from './components/WhyChooseUs';
+import WhyUs from './components/WhyUs';
 import Process from './components/Process';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -15,7 +15,7 @@ function App() {
 			<main>
 				<Hero />
 				<Services />
-				<WhyChooseUs />
+				<WhyUs />
 				<Process />
 				<Testimonials />
 				<FAQ />

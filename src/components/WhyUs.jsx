@@ -32,7 +32,7 @@ const features = [
 	},
 ];
 
-export default function WhyChooseUs() {
+export default function WhyUs() {
 	const [isVisible, setIsVisible] = useState(false);
 	const sectionRef = useRef(null);
 
