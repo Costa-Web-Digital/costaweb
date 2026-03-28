@@ -49,3 +49,27 @@ jobs:
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
+
+            - name: Notify Success
+              if: success()
+              uses: appleboy/telegram-action@master
+              with:
+                  to: ${{ secrets.TELEGRAM_CHAT_ID }}
+                  token: ${{ secrets.TELEGRAM_TOKEN }}
+                  format: markdown
+                  message: |
+                      ✅ *Deploy Concluído com Sucesso!*
+                      🚀 O site foi atualizado.
+                      🔗 [Ver Site](${{ steps.deployment.outputs.page_url }})
+
+            - name: Notify Failure
+              if: failure()
+              uses: appleboy/telegram-action@master
+              with:
+                  to: ${{ secrets.TELEGRAM_CHAT_ID }}
+                  token: ${{ secrets.TELEGRAM_TOKEN }}
+                  format: markdown
+                  message: |
+                      ❌ *Falha no Deploy!*
+                      Ocorreu um erro ao tentar publicar no GitHub Pages.
+                      🔍 [Ver Logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
