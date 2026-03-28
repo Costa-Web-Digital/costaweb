@@ -62,12 +62,6 @@ export default function Hero() {
 								Quero meu site agora
 								<ArrowRight className="w-5 h-5" />
 							</a>
-							<a
-								href="#portfolio"
-								className="inline-flex items-center gap-2 glass px-6 py-3 rounded-xl font-semibold text-[var(--text-primary)] hover:bg-[var(--border-color)] transition-colors"
-							>
-								Ver portfólio
-							</a>
 						</div>
 
 						<div className="flex items-center gap-8 mt-10">
