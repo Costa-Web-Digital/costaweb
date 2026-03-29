@@ -52,7 +52,7 @@ export default function WhyUs() {
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
 						Diferenciais que fazem toda a diferença no seu projeto.
-						Experiência e compromisso com resultados em cada detailhe.
+						Experiência e compromisso com resultados em cada detalhe.
 					</p>
 				</div>
 

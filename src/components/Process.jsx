@@ -15,7 +15,7 @@ const steps = [
 	{
 		icon: Code,
 		title: 'Desenvolvimento',
-		description: 'Criamos seu projeto com atenção a cada detailhe.',
+		description: 'Criamos seu projeto com atenção a cada detalhe.',
 	},
 	{
 		icon: Rocket,
