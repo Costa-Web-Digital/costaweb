@@ -25,12 +25,7 @@ Tabela de projetos configurável com tipos, categorias e gradientes.
 
 ## Padrões
 
-- Seção com `id="portfolio"`, fundo `--color-surface-alt`
-- Área de cor com `bg-gradient-to-br {project.color}` e overlay `bg-black/20`
-- Badge com `glass` posicionado no topo esquerdo do card
-- Hover mostra overlay centralizado com link "Ver projeto"
-- Cards usam `card-hover` (translate + shadow no hover)
-- Botão final com `bg-gradient-to-br from-primary to-secondary`
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Status
 
@@ -39,4 +34,3 @@ Tabela de projetos configurável com tipos, categorias e gradientes.
 ## Relacionamentos
 
 - [use-in-view.md](../hooks/use-in-view.md) — animação de entrada
-- [utility-classes.md](../styling/utility-classes.md) — classes glass, card-hover

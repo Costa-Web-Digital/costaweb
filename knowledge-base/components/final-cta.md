@@ -23,14 +23,9 @@ Call-to-action final com fundo gradient e dois botões de ação configuráveis.
 
 ## Padrões
 
-- Seção com `id="contato"` (alvo de navegação de outros componentes)
-- Fundo com `bg-gradient-to-br from-primary to-secondary` absolute + padrão SVG em base64 com `opacity-30`
-- Botão WhatsApp: `bg-white text-primary` com shadow
-- Botão secundário: `glass-dark text-white` (efeito glass com fundo escuro)
-- Link do WhatsApp abre em nova aba com `rel="noopener noreferrer"`
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Relacionamentos
 
 - [use-scroll-to.md](../hooks/use-scroll-to.md) — navegação
 - [use-in-view.md](../hooks/use-in-view.md) — animação
-- [utility-classes.md](../styling/utility-classes.md) — glass-dark

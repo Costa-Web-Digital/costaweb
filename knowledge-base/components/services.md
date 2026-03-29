@@ -26,13 +26,9 @@ Tabela de serviços configurável com ícones Lucide.
 
 ## Padrões
 
-- Cards usam `glass` + `card-hover` + `border-glass-border`
-- Ícone dentro de `bg-gradient-to-br from-primary to-secondary rounded-xl`
-- Seção com `id="servicos"` para navegação por rota
-- Header section com `gradient-text` no título
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Relacionamentos
 
 - [use-in-view.md](../hooks/use-in-view.md) — animação de entrada
 - [use-scroll-to.md](../hooks/use-scroll-to.md) — navegação ao contato
-- [utility-classes.md](../styling/utility-classes.md) — classes glass, card-hover

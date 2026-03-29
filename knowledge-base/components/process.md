@@ -25,12 +25,8 @@ Tabela de etapas configurável com ícones Lucide.
 
 ## Padrões
 
-- Seção com `id="processo"`, fundo `--color-surface`
-- Ícones com `animate-pulse-glow` (keyframe customizado no index.css)
-- Conectores: `border-t-2 border-dashed` posicionados absolutamente
-- Delay escalonado de 150ms entre etapas
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Relacionamentos
 
 - [use-in-view.md](../hooks/use-in-view.md) — animação de entrada
-- [utility-classes.md](../styling/utility-classes.md) — animate-pulse-glow

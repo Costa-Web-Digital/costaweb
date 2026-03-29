@@ -71,4 +71,3 @@ Hero/
 - [use-in-view.md](../hooks/use-in-view.md) — hook de visibilidade
 - [use-scroll-to.md](../hooks/use-scroll-to.md) — hook de navegação
 - [design-tokens.md](../styling/design-tokens.md) — variáveis CSS
-- [utility-classes.md](../styling/utility-classes.md) — classes glass, gradient-text

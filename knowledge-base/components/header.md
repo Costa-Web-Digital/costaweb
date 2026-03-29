@@ -42,12 +42,9 @@ const navLinks = [
 
 ## Padrões
 
-- Usa `glass` utility class para efeito de fundo translúcido quando scrollado
-- Menu mobile fecha automaticamente ao clicar em um link
-- Classes `bg-gradient-to-br from-primary to-secondary` no CTA e no logo
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Relacionamentos
 
 - [routing.md](../architecture/routing.md) — sistema de navegação
 - [use-scroll-to.md](../hooks/use-scroll-to.md) — hook de scroll
-- [utility-classes.md](../styling/utility-classes.md) — classes glass e gradient

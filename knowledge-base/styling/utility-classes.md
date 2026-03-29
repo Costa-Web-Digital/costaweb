@@ -121,5 +121,6 @@ Pulso de sombra com glow roxo (3s loop).
 ## Relacionamentos
 
 - [design-tokens.md](design-tokens.md) — variáveis CSS usadas
+- [component-patterns.md](component-patterns.md) — padrões de elementos UI
 - [hero.md](../components/hero.md) — DesignMock usa animate-float
 - [process.md](../components/process.md) — usa animate-pulse-glow

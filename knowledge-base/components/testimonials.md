@@ -25,12 +25,8 @@ Lista de depoimentos configurável com nomes, cargos e avaliações.
 
 ## Padrões
 
-- Estrelas renderizadas com `[...Array(rating)].map()` e `fill-yellow-400`
-- Avatar: `bg-gradient-to-br from-primary to-secondary rounded-full` com iniciais extraídas via `name.split(' ').map(n => n[0]).join('')`
-- Card com `glass`, `border-glass-border`
-- Aspas decorativas posicionadas absolutamente no canto superior direito
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Relacionamentos
 
 - [use-in-view.md](../hooks/use-in-view.md) — animação de entrada
-- [utility-classes.md](../styling/utility-classes.md) — classes glass

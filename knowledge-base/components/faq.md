@@ -32,13 +32,8 @@ Lista de perguntas configurável.
 
 ## Padrões
 
-- Seção com `id="faq"`, fundo `--color-surface-alt`, `max-w-3xl` centralizado
-- Card com `glass`, `border-glass-border`, `overflow-hidden`
-- Toggle: `openIndex === index ? null : index`
-- Animação: `max-h-40` (aberto) vs `max-h-0` (fechado) com `transition-all duration-300`
-- Chevron com `rotate-180` condicional
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Relacionamentos
 
 - [use-in-view.md](../hooks/use-in-view.md) — animação de entrada
-- [utility-classes.md](../styling/utility-classes.md) — classes glass

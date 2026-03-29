@@ -57,5 +57,6 @@ O `@theme` é uma diretiva do Tailwind CSS v4 que define design tokens disponív
 
 ## Relacionamentos
 
-- [utility-classes.md](utility-classes.md) — classes que usam estes tokens
+- [utility-classes.md](utility-classes.md) — classes customizadas
+- [component-patterns.md](component-patterns.md) — padrões de elementos UI
 - [tech-stack.md](../overview/tech-stack.md) — stack incluindo Tailwind v4

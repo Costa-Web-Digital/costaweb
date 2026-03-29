@@ -45,10 +45,7 @@ Itens configuráveis, todos apontam para seção `servicos`.
 
 ## Padrões
 
-- Grid 4 colunas (sm: 2, lg: 4) com `border-t` superior
-- Ícones de redes sociais em `glass rounded-xl` com hover
-- SVGs inline para ícones sociais (não usa Lucide para estes)
-- Copyright texto configurável
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Known Issues
 

@@ -25,12 +25,8 @@ Tabela de diferenciais configurável com ícones Lucide e estatísticas ilustrat
 
 ## Padrões
 
-- Seção com `id="porque-nos"`, fundo `--color-surface-alt`
-- Cards com `glass`, `border-glass-border`
-- Ícone dentro de `bg-gradient-to-br from-primary to-secondary rounded-2xl` centralizado
-- Estatística com `gradient-text`, separada por `border-t`
+Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
 ## Relacionamentos
 
 - [use-in-view.md](../hooks/use-in-view.md) — animação de entrada
-- [utility-classes.md](../styling/utility-classes.md) — classes glass, gradient-text
