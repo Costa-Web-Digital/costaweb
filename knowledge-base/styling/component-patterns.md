@@ -262,7 +262,7 @@ glass rounded-2xl p-4
 
 ---
 
-###.Container deÍcone Social
+### Container de Ícone Social
 
 Container para ícones de redes sociais no footer.
 
