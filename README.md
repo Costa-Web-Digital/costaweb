@@ -108,7 +108,6 @@ O projeto utiliza variáveis CSS customizadas para tokens de design, definidas e
 
 - **Tipografia**: [Clash Display](https://www.fontshare.com/fonts/clash-display) (
   headings) + [DM Sans](https://fonts.google.com/specimen/DM+Sans) (body)
-- **Tema**: Suporte a modo claro e escuro via `ThemeContext`
 - **Cores**: Palette brutalista controlada por `--bg-primary`, `--text-primary`, `--accent`
 
 ---
