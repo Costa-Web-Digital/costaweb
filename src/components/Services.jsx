@@ -47,7 +47,7 @@ export default function Services() {
 					}`}
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
-						Nossos <span className="gradient-text">Serviços</span>
+						Nossos <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Serviços</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
 						Solutions complete para fazer seu negócio decolar no digital.

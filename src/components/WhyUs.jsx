@@ -48,7 +48,7 @@ export default function WhyUs() {
 					}`}
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
-						Por que escolher a <span className="gradient-text">CostaWeb?</span>
+						Por que escolher a <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">CostaWeb?</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
 						Diferenciais que fazem toda a diferença no seu projeto.
@@ -78,7 +78,7 @@ export default function WhyUs() {
 							</p>
 
 							<div className="pt-4 border-t border-border">
-								<p className="text-3xl font-bold gradient-text">{feature.stat}</p>
+								<p className="text-3xl font-bold bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">{feature.stat}</p>
 								<p className="text-xs text-muted">{feature.statLabel}</p>
 							</div>
 						</div>

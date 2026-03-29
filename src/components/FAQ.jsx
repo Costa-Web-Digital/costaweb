@@ -50,7 +50,7 @@ export default function FAQ() {
 					}`}
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
-						Perguntas <span className="gradient-text">Frequentes</span>
+						Perguntas <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Frequentes</span>
 					</h2>
 					<p className="text-muted">
 						Tire suas dúvidas sobre nossos serviços e processo de trabalho.

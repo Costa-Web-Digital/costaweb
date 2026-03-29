@@ -10,19 +10,6 @@ Classes CSS customizadas definidas em `@layer components` no `src/index.css`, al
 
 ## Classes de Componente
 
-### `.gradient-text`
-
-Aplica gradiente primary→secondary como cor do texto (efeito de texto gradient).
-
-```css
-background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-```
-
-**Uso**: Títulos de seção, estatísticas, destaques.
-
 ### `.glass`
 
 Efeito de vidro fosco (glassmorphism) com fundo translúcido.

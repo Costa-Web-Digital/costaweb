@@ -40,7 +40,6 @@ Hero/
 ### Title
 
 - `<h1>` com headline principal do componente
-- Classe `gradient-text` aplicada em trecho destacado
 
 ### Tagline
 
@@ -57,7 +56,6 @@ Hero/
 
 - Estatísticas ilustrativas do componente
 - Separadas por dividers verticais
-- Texto com `gradient-text`
 
 ### DesignMock
 

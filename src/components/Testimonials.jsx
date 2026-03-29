@@ -37,7 +37,7 @@ export default function Testimonials() {
 					}`}
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
-						O que dizem nossos <span className="gradient-text">Clientes</span>
+						O que dizem nossos <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Clientes</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
 						A opinião de quem já trabalha conosco é o maior indikator de qualidade.

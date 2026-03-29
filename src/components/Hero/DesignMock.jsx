@@ -17,7 +17,7 @@ export const DesignMock = () => (
 			<div className="space-y-4">
 				<div className="h-4 bg-border rounded w-3/4" />
 				<div className="h-4 bg-border rounded w-1/2" />
-				<div className="h-20 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+				<div className="h-20 bg-gradient-to-br from-tertiary to-accent rounded-xl flex items-center justify-center">
 				</div>
 				<div className="grid grid-cols-3 gap-3">
 					<div className="h-16 bg-border rounded-xl" />

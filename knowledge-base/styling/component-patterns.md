@@ -100,13 +100,11 @@ glass rounded-2xl border border-glass-border overflow-hidden
 
 ### Card de Diferencial
 
-Card de차 benefits com estatística.
+Card de benefits com estatística.
 
 ```
 glass rounded-2xl p-6 border border-glass-border
 ```
-
-Stat-container: `border-t border-border` com `gradient-text` no número.
 
 **Componentes**: WhyUs.
 
@@ -168,10 +166,10 @@ inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition
 
 ### Título com Gradiente
 
-Texto destacado com gradiente primary→secondary.
+Texto destacado com gradiente secondary → tertiary.
 
 ```
-<span className="gradient-text">termo</span>
+<span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">termo</span>
 ```
 
 **Uso**: Trechos de títulos (Services, WhyUs, Process, Testimonials, FAQ).
@@ -278,7 +276,7 @@ w-10 h-10 glass rounded-xl flex items-center justify-center hover:bg-border tran
 
 ## Relacionamentos
 
-- [utility-classes.md](utility-classes.md) — classes customizadas (glass, card-hover, gradient-text)
+- [utility-classes.md](utility-classes.md) — classes customizadas (glass, card-hover)
 - [design-tokens.md](design-tokens.md) — variáveis CSS (primary, secondary, ink, muted)
 - [components/](../components/) — documentação de componentes individuais
 

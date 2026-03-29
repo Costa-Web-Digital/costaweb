@@ -56,7 +56,7 @@ export default function Portfolio() {
 					}`}
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
-						Nosso <span className="gradient-text">Portfólio</span>
+						Nosso <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Portfólio</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
 						Projetos que мы сделали para empresas que decidiram crescer no digital.

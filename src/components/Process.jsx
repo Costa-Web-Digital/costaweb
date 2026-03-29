@@ -45,7 +45,7 @@ export default function Process() {
 					}`}
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
-						Como <span className="gradient-text">Funciona</span>
+						Como <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Funciona</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
 						Processo simples e transparente. Você sabe exatamente o que acontece
