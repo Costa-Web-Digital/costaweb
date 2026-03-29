@@ -27,7 +27,7 @@ export const DesignMock = () => (
 			</div>
 
 			<div className="absolute -top-4 -right-4 glass px-4 py-2 rounded-xl border border-glass-border">
-				<span className="text-sm font-semibold text-primary">Completamente personalizável</span>
+				<span className="text-sm font-semibold text-primary">100% personalizável</span>
 			</div>
 
 			<div className="absolute -bottom-4 -left-4 glass px-4 py-2 rounded-xl border border-glass-border">
