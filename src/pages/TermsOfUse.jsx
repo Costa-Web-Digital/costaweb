@@ -20,7 +20,7 @@ export default function TermsOfUse() {
 				</Link>
 
 				<div className="flex items-center gap-4 mb-8">
-					<div className="w-12 h-12 gradient-bg rounded-2xl flex items-center justify-center flex-shrink-0">
+					<div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center flex-shrink-0">
 						<FileText className="w-6 h-6 text-white" />
 					</div>
 					<div>

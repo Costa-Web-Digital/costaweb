@@ -64,11 +64,11 @@ export default function Process() {
 								style={{ transitionDelay: `${index * 150}ms` }}
 							>
 								<div className="flex flex-col items-center text-center">
-									<div className="relative z-10 w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mb-4 shadow-lg animate-pulse-glow">
+									<div className="relative z-10 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-4 shadow-lg animate-pulse-glow">
 										<step.icon className="w-9 h-9 text-white" />
 									</div>
 
-									<div className="w-8 h-8 gradient-bg rounded-full flex items-center justify-center mb-3 lg:hidden">
+									<div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mb-3 lg:hidden">
 										<span className="text-white font-bold">{index + 1}</span>
 									</div>
 

@@ -1,6 +1,6 @@
 export const DesignMock = () => (
 	<div className="relative animate-float">
-		<div className="absolute inset-0 gradient-bg opacity-20 rounded-3xl blur-2xl" />
+		<div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-20 rounded-3xl blur-2xl" />
 
 		<div className="relative glass rounded-3xl p-8 border border-glass-border">
 			<div className="flex items-center gap-4 mb-6">
@@ -17,7 +17,7 @@ export const DesignMock = () => (
 			<div className="space-y-4">
 				<div className="h-4 bg-border rounded w-3/4" />
 				<div className="h-4 bg-border rounded w-1/2" />
-				<div className="h-20 gradient-bg rounded-xl flex items-center justify-center">
+				<div className="h-20 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
 				</div>
 				<div className="grid grid-cols-3 gap-3">
 					<div className="h-16 bg-border rounded-xl" />

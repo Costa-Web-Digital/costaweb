@@ -33,7 +33,7 @@ O conteúdo textual (títulos de seção, parágrafos, listas) é editado direta
 ## Padrões
 
 - Layout: `max-w-3xl`, padding `py-24`
-- Ícone de escudo com `gradient-bg rounded-2xl`
+- Ícone de escudo com `bg-gradient-to-br from-primary to-secondary rounded-2xl`
 - Links de contato com `text-primary hover:underline`
 - Card de contato com `glass rounded-2xl`
 

@@ -26,7 +26,7 @@ export default function Footer() {
 				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 					<div>
 						<Link to="/" className="flex items-center gap-2 mb-4">
-							<div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+							<div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
 						<span className="text-white font-bold text-xl font-display">C</span>
 						</div>
 						<span className="text-xl font-bold font-display text-ink">

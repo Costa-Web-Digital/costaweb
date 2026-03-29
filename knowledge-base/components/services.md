@@ -27,7 +27,7 @@ Tabela de serviços configurável com ícones Lucide.
 ## Padrões
 
 - Cards usam `glass` + `card-hover` + `border-glass-border`
-- Ícone dentro de `gradient-bg rounded-xl`
+- Ícone dentro de `bg-gradient-to-br from-primary to-secondary rounded-xl`
 - Seção com `id="servicos"` para navegação por rota
 - Header section com `gradient-text` no título
 

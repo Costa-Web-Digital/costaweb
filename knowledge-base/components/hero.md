@@ -51,7 +51,7 @@ Hero/
 
 - Botão de ação principal com ícone `ArrowRight`
 - Usa `useScrollTo('contato')` para navegação ao contato
-- Classe `gradient-bg`
+- Classes `bg-gradient-to-br from-primary to-secondary`
 
 ### Highlights
 
@@ -64,7 +64,7 @@ Hero/
 - Mockup estilizado de browser com barras de placeholder
 - Classe `animate-float` para efeito flutuante
 - Badges flutuantes ilustrativos
-- Usa `glass` e `gradient-bg`
+- Usa `glass` e `bg-gradient-to-br from-primary to-secondary`
 
 ## Relacionamentos
 

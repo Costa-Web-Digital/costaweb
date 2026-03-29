@@ -44,7 +44,7 @@ const navLinks = [
 
 - Usa `glass` utility class para efeito de fundo translúcido quando scrollado
 - Menu mobile fecha automaticamente ao clicar em um link
-- Classe `gradient-bg` no CTA e no logo
+- Classes `bg-gradient-to-br from-primary to-secondary` no CTA e no logo
 
 ## Relacionamentos
 

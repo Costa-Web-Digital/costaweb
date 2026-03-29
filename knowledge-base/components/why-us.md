@@ -27,7 +27,7 @@ Tabela de diferenciais configurável com ícones Lucide e estatísticas ilustrat
 
 - Seção com `id="porque-nos"`, fundo `--color-surface-alt`
 - Cards com `glass`, `border-glass-border`
-- Ícone dentro de `gradient-bg rounded-2xl` centralizado
+- Ícone dentro de `bg-gradient-to-br from-primary to-secondary rounded-2xl` centralizado
 - Estatística com `gradient-text`, separada por `border-t`
 
 ## Relacionamentos

@@ -65,7 +65,7 @@ export default function Services() {
 							}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
 						>
-							<div className="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+							<div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
 								<service.icon className="w-7 h-7 text-white" />
 							</div>
 

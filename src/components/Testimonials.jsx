@@ -70,7 +70,7 @@ export default function Testimonials() {
 							</p>
 
 							<div className="flex items-center gap-4">
-								<div className="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
+								<div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
 									<span className="text-white font-semibold">
 										{testimonial.name.split(' ').map(n => n[0]).join('')}
 									</span>

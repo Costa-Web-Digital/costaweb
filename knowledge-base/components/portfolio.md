@@ -30,7 +30,7 @@ Tabela de projetos configurável com tipos, categorias e gradientes.
 - Badge com `glass` posicionado no topo esquerdo do card
 - Hover mostra overlay centralizado com link "Ver projeto"
 - Cards usam `card-hover` (translate + shadow no hover)
-- Botão final com `gradient-bg`
+- Botão final com `bg-gradient-to-br from-primary to-secondary`
 
 ## Status
 

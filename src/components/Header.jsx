@@ -29,7 +29,7 @@ export default function Header() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between">
 					<Link to="/" className="flex items-center gap-2">
-						<div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+						<div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
 						<span className="text-white font-bold text-xl font-display">C</span>
 					</div>
 					<span className="text-xl font-bold font-display text-ink">
@@ -52,7 +52,7 @@ export default function Header() {
 					<div className="flex items-center gap-3">
 						<button
 							onClick={() => scrollTo('contato')}
-							className="hidden md:flex items-center gap-2 gradient-bg text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
+							className="hidden md:flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
 						>
 							Entre em contato agora
 							<ArrowRight className="w-4 h-4" />
@@ -86,7 +86,7 @@ export default function Header() {
 							))}
 							<button
 								onClick={() => { scrollTo('contato'); setMobileMenuOpen(false); }}
-								className="flex items-center justify-center gap-2 gradient-bg text-white px-5 py-3 rounded-xl font-semibold cursor-pointer border-0 w-full"
+								className="flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-3 rounded-xl font-semibold cursor-pointer border-0 w-full"
 							>
 								Entre em contato agora
 								<ArrowRight className="w-4 h-4" />

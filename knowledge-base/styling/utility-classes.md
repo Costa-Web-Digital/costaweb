@@ -23,16 +23,6 @@ background-clip: text;
 
 **Uso**: Títulos de seção, estatísticas, destaques.
 
-### `.gradient-bg`
-
-Fundo com gradiente primary→secondary.
-
-```css
-background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-```
-
-**Uso**: Botões CTA, ícones, avatares, áreas decorativas.
-
 ### `.glass`
 
 Efeito de vidro fosco (glassmorphism) com fundo translúcido.
@@ -90,6 +80,9 @@ Tokens definidos no `@theme` geram utilitários Tailwind automáticos:
 | `bg-surface` | `background-color: #ffffff` |
 | `bg-surface-alt` | `background-color: #f8f5fc` |
 | `bg-surface-card` | `background-color: rgba(255, 255, 255, 0.8)` |
+| `bg-gradient-to-br` | `background-image: linear-gradient(to bottom right, ...)` |
+| `from-primary` | `--tw-gradient-from: #520380` |
+| `to-secondary` | `--tw-gradient-to: #831DC6` |
 | `text-ink` | `color: #1a0a2e` |
 | `text-ink-alt` | `color: #4a3f5c` |
 | `text-muted` | `color: #6b5d7a` |

@@ -33,7 +33,7 @@ O conteúdo textual (títulos de seção, parágrafos, listas) é editado direta
 ## Padrões
 
 - Layout idêntico ao `PrivacyPolicy` (max-w-3xl, py-24)
-- Ícone de documento com `gradient-bg rounded-2xl`
+- Ícone de documento com `bg-gradient-to-br from-primary to-secondary rounded-2xl`
 - Link interno para `/politica-de-privacidade` na seção 2
 - Card de contato com `glass rounded-2xl`
 

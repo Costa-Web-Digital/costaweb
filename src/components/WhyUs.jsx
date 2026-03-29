@@ -65,7 +65,7 @@ export default function WhyUs() {
 							}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
 						>
-							<div className="w-16 h-16 mx-auto gradient-bg rounded-2xl flex items-center justify-center mb-5">
+							<div className="w-16 h-16 mx-auto bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-5">
 								<feature.icon className="w-8 h-8 text-white" />
 							</div>
 

@@ -38,10 +38,6 @@ html {
 		background-clip: text;
 	}
 
-	.gradient-bg {
-		background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-	}
-
 	.glass {
 		background: var(--color-glass-bg);
 		backdrop-filter: blur(20px);
