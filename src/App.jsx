@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
+import Hero from './components/Hero/Hero.jsx';
 import Services from './components/Services';
 import WhyUs from './components/WhyUs';
 import Process from './components/Process';
