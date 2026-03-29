@@ -41,7 +41,7 @@ export default function FAQ() {
 		<section
 			id="faq"
 			ref={sectionRef}
-			className="py-20 bg-[var(--color-bg-secondary)]"
+			className="py-20 bg-surface-alt"
 		>
 			<div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
@@ -52,7 +52,7 @@ export default function FAQ() {
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
 						Perguntas <span className="gradient-text">Frequentes</span>
 					</h2>
-					<p className="text-[var(--color-text-muted)]">
+					<p className="text-muted">
 						Tire suas dúvidas sobre nossos serviços e processo de trabalho.
 					</p>
 				</div>
@@ -61,7 +61,7 @@ export default function FAQ() {
 					{faqs.map((faq, index) => (
 						<div
 							key={faq.question}
-							className={`glass rounded-2xl border border-[var(--color-glass-border)] overflow-hidden transition-all duration-700 ${
+							className={`glass rounded-2xl border border-glass-border overflow-hidden transition-all duration-700 ${
 								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 							}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
@@ -70,11 +70,11 @@ export default function FAQ() {
 								onClick={() => toggleFAQ(index)}
 								className="w-full flex items-center justify-between p-5 text-left"
 							>
-								<span className="font-semibold text-[var(--text-primary)] pr-4">
+								<span className="font-semibold text-ink pr-4">
 									{faq.question}
 								</span>
 								<ChevronDown
-									className={`w-5 h-5 text-[var(--color-primary)] transition-transform duration-300 flex-shrink-0 ${
+									className={`w-5 h-5 text-primary transition-transform duration-300 flex-shrink-0 ${
 										openIndex === index ? 'rotate-180' : ''
 									}`}
 								/>
@@ -85,7 +85,7 @@ export default function FAQ() {
 									openIndex === index ? 'max-h-40' : 'max-h-0'
 								}`}
 							>
-								<p className="px-5 pb-5 text-[var(--color-text-muted)]">
+								<p className="px-5 pb-5 text-muted">
 									{faq.answer}
 								</p>
 							</div>

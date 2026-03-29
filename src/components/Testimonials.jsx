@@ -28,7 +28,7 @@ export default function Testimonials() {
 	return (
 		<section
 			ref={sectionRef}
-			className="py-20 bg-[var(--color-bg-primary)]"
+			className="py-20 bg-surface"
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
@@ -39,7 +39,7 @@ export default function Testimonials() {
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
 						O que dizem nossos <span className="gradient-text">Clientes</span>
 					</h2>
-					<p className="text-[var(--color-text-muted)] max-w-2xl mx-auto">
+					<p className="text-muted max-w-2xl mx-auto">
 						A opinião de quem já trabalha conosco é o maior indikator de qualidade.
 						Aqui estão alguns feedbacks.
 					</p>
@@ -49,12 +49,12 @@ export default function Testimonials() {
 					{testimonials.map((testimonial, index) => (
 						<div
 							key={testimonial.name}
-							className={`relative glass rounded-2xl p-6 border border-[var(--color-glass-border)] transition-all duration-700 ${
+							className={`relative glass rounded-2xl p-6 border border-glass-border transition-all duration-700 ${
 								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 							}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
 						>
-							<Quote className="absolute top-4 right-4 w-8 h-8 text-[var(--color-primary)] opacity-20" />
+							<Quote className="absolute top-4 right-4 w-8 h-8 text-primary opacity-20" />
 
 							<div className="flex gap-1 mb-4">
 								{[...Array(testimonial.rating)].map((_, i) => (
@@ -65,7 +65,7 @@ export default function Testimonials() {
 								))}
 							</div>
 
-							<p className="text-[var(--color-text-secondary)] mb-6 leading-relaxed">
+							<p className="text-ink-alt mb-6 leading-relaxed">
 								"{testimonial.content}"
 							</p>
 
@@ -76,10 +76,10 @@ export default function Testimonials() {
 									</span>
 								</div>
 								<div>
-									<p className="font-semibold text-[var(--text-primary)]">
+									<p className="font-semibold text-ink">
 										{testimonial.name}
 									</p>
-									<p className="text-sm text-[var(--color-text-muted)]">
+									<p className="text-sm text-muted">
 										{testimonial.role}
 									</p>
 								</div>

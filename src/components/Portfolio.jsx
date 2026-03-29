@@ -47,7 +47,7 @@ export default function Portfolio() {
 		<section
 			id="portfolio"
 			ref={sectionRef}
-			className="py-20 bg-[var(--color-bg-secondary)]"
+			className="py-20 bg-surface-alt"
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
@@ -58,7 +58,7 @@ export default function Portfolio() {
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
 						Nosso <span className="gradient-text">Portfólio</span>
 					</h2>
-					<p className="text-[var(--color-text-muted)] max-w-2xl mx-auto">
+					<p className="text-muted max-w-2xl mx-auto">
 						Projetos que мы сделали para empresas que decidiram crescer no digital.
 						Cada projeto é único, mas todos têm algo em comum: resultados.
 					</p>
@@ -68,7 +68,7 @@ export default function Portfolio() {
 					{projects.map((project, index) => (
 						<div
 							key={project.title}
-							className={`group relative glass rounded-2xl overflow-hidden border border-[var(--color-glass-border)] card-hover transition-all duration-700 ${
+							className={`group relative glass rounded-2xl overflow-hidden border border-glass-border card-hover transition-all duration-700 ${
 								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 							}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
@@ -94,8 +94,8 @@ export default function Portfolio() {
 							</div>
 
 							<div className="p-5">
-								<p className="text-xs text-[var(--color-text-muted)] mb-1">{project.category}</p>
-								<h3 className="text-lg font-semibold text-[var(--text-primary)]">
+							<p className="text-xs text-muted mb-1">{project.category}</p>
+							<h3 className="text-lg font-semibold text-ink">
 									{project.title}
 								</h3>
 							</div>

@@ -39,7 +39,7 @@ export default function WhyUs() {
 		<section
 			id="porque-nos"
 			ref={sectionRef}
-			className="py-20 bg-[var(--color-bg-secondary)]"
+			className="py-20 bg-surface-alt"
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
@@ -50,7 +50,7 @@ export default function WhyUs() {
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
 						Por que escolher a <span className="gradient-text">CostaWeb?</span>
 					</h2>
-					<p className="text-[var(--color-text-muted)] max-w-2xl mx-auto">
+					<p className="text-muted max-w-2xl mx-auto">
 						Diferenciais que fazem toda a diferença no seu projeto.
 						Experiência e compromisso com resultados em cada detailhe.
 					</p>
@@ -60,7 +60,7 @@ export default function WhyUs() {
 					{features.map((feature, index) => (
 						<div
 							key={feature.title}
-							className={`text-center glass rounded-2xl p-6 border border-[var(--color-glass-border)] transition-all duration-700 ${
+							className={`text-center glass rounded-2xl p-6 border border-glass-border transition-all duration-700 ${
 								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 							}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
@@ -69,17 +69,17 @@ export default function WhyUs() {
 								<feature.icon className="w-8 h-8 text-white" />
 							</div>
 
-							<h3 className="text-lg font-semibold mb-2 text-[var(--text-primary)]">
+							<h3 className="text-lg font-semibold mb-2 text-ink">
 								{feature.title}
 							</h3>
 
-							<p className="text-sm text-[var(--color-text-muted)] mb-4">
+							<p className="text-sm text-muted mb-4">
 								{feature.description}
 							</p>
 
-							<div className="pt-4 border-t border-[var(--color-border)]">
+							<div className="pt-4 border-t border-border">
 								<p className="text-3xl font-bold gradient-text">{feature.stat}</p>
-								<p className="text-xs text-[var(--color-text-muted)]">{feature.statLabel}</p>
+								<p className="text-xs text-muted">{feature.statLabel}</p>
 							</div>
 						</div>
 					))}

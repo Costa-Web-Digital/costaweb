@@ -34,7 +34,7 @@ export default function FinalCTA() {
 							href="https://wa.me/5511999639567"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="inline-flex items-center gap-2 bg-white text-[var(--color-primary)] px-8 py-4 rounded-xl font-bold hover:bg-white/90 transition-colors shadow-lg"
+							className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-white/90 transition-colors shadow-lg"
 						>
 							<MessageCircle className="w-5 h-5" />
 							Falar no WhatsApp

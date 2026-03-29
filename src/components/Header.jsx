@@ -30,20 +30,20 @@ export default function Header() {
 				<div className="flex items-center justify-between">
 					<Link to="/" className="flex items-center gap-2">
 						<div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
-							<span className="text-white font-bold text-xl font-[var(--font-display)]">C</span>
-						</div>
-						<span className="text-xl font-bold font-[var(--font-display)] text-[var(--text-primary)]">
-							CostaWeb
-						</span>
-					</Link>
+						<span className="text-white font-bold text-xl font-display">C</span>
+					</div>
+					<span className="text-xl font-bold font-display text-ink">
+						CostaWeb
+					</span>
+				</Link>
 
-					<nav className="hidden md:flex items-center gap-8">
-						{navLinks.map((link) => (
-							<button
-								key={link.id}
-								onClick={() => scrollTo(link.id)}
-								className="text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
-							>
+				<nav className="hidden md:flex items-center gap-8">
+					{navLinks.map((link) => (
+						<button
+							key={link.id}
+							onClick={() => scrollTo(link.id)}
+							className="text-ink-alt hover:text-primary transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
+						>
 								{link.label}
 							</button>
 						))}
@@ -60,14 +60,14 @@ export default function Header() {
 
 						<button
 							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-							className="md:hidden p-2 rounded-xl bg-[var(--color-bg-secondary)]"
-							aria-label="Menu"
-						>
-							{mobileMenuOpen ? (
-								<X className="w-6 h-6 text-[var(--text-primary)]" />
-							) : (
-								<Menu className="w-6 h-6 text-[var(--text-primary)]" />
-							)}
+						className="md:hidden p-2 rounded-xl bg-surface-alt"
+						aria-label="Menu"
+					>
+						{mobileMenuOpen ? (
+							<X className="w-6 h-6 text-ink" />
+						) : (
+							<Menu className="w-6 h-6 text-ink" />
+						)}
 						</button>
 					</div>
 				</div>
@@ -79,7 +79,7 @@ export default function Header() {
 								<button
 									key={link.id}
 									onClick={() => { scrollTo(link.id); setMobileMenuOpen(false); }}
-									className="text-left text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors font-medium py-2 cursor-pointer bg-transparent border-0 w-full"
+									className="text-left text-ink-alt hover:text-primary transition-colors font-medium py-2 cursor-pointer bg-transparent border-0 w-full"
 								>
 									{link.label}
 								</button>

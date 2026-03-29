@@ -36,7 +36,7 @@ export default function Process() {
 		<section
 			id="processo"
 			ref={sectionRef}
-			className="py-20 bg-[var(--color-bg-primary)]"
+			className="py-20 bg-surface"
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
@@ -47,7 +47,7 @@ export default function Process() {
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
 						Como <span className="gradient-text">Funciona</span>
 					</h2>
-					<p className="text-[var(--color-text-muted)] max-w-2xl mx-auto">
+					<p className="text-muted max-w-2xl mx-auto">
 						Processo simples e transparente. Você sabe exatamente o que acontece
 						em cada etapa do seu projeto.
 					</p>
@@ -72,18 +72,18 @@ export default function Process() {
 										<span className="text-white font-bold">{index + 1}</span>
 									</div>
 
-									<h3 className="text-lg font-semibold mb-2 text-[var(--text-primary)]">
+									<h3 className="text-lg font-semibold mb-2 text-ink">
 										{step.title}
 									</h3>
 
-									<p className="text-sm text-[var(--color-text-muted)]">
+									<p className="text-sm text-muted">
 										{step.description}
 									</p>
 								</div>
 
 								{index < steps.length - 1 && (
 									<div className="hidden lg:flex absolute top-10 left-[calc(50%+40px)] right-[calc(-50%+40px)] h-1">
-										<div className="flex-1 border-t-2 border-dashed border-[var(--color-border)]" />
+										<div className="flex-1 border-t-2 border-dashed border-border" />
 									</div>
 								)}
 							</div>
