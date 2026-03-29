@@ -6,7 +6,7 @@
 	--color-tertiary: #E099DB;
 	--color-accent: #FFC2E2;
 
-	--font-display: 'Clash Display', sans-serif;
+	--font-display: 'Montserrat', sans-serif;
 	--font-body: 'DM Sans', sans-serif;
 
 	--color-surface: #ffffff;
@@ -27,7 +27,13 @@ html {
 
 @layer base {
 	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-display);
 		color: var(--color-ink);
+		font-weight: 650;
+	}
+
+	body {
+		font-family: var(--font-body);
 	}
 }
 
