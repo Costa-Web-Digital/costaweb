@@ -54,7 +54,7 @@ export default function Header() {
 							onClick={() => scrollTo('contato')}
 							className="hidden md:flex items-center gap-2 gradient-bg text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
 						>
-							Falar no WhatsApp
+							Entre em contato agora
 							<ArrowRight className="w-4 h-4" />
 						</button>
 
@@ -88,7 +88,7 @@ export default function Header() {
 								onClick={() => { scrollTo('contato'); setMobileMenuOpen(false); }}
 								className="flex items-center justify-center gap-2 gradient-bg text-white px-5 py-3 rounded-xl font-semibold cursor-pointer border-0 w-full"
 							>
-								Falar no WhatsApp
+								Entre em contato agora
 								<ArrowRight className="w-4 h-4" />
 							</button>
 						</nav>

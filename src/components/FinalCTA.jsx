@@ -37,7 +37,7 @@ export default function FinalCTA() {
 							className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-white/90 transition-colors shadow-lg"
 						>
 							<MessageCircle className="w-5 h-5" />
-							Falar no WhatsApp
+							Entre em contato agora
 						</a>
 						<button
 							onClick={() => scrollTo('servicos')}
