@@ -37,8 +37,8 @@ Seção de perguntas frequentes com accordion interativo.
 
 ## Padrões
 
-- Seção com `id="faq"`, fundo `--color-bg-secondary`, `max-w-3xl` centralizado
-- Card com `glass`, `border-[var(--color-glass-border)]`, `overflow-hidden`
+- Seção com `id="faq"`, fundo `--color-surface-alt`, `max-w-3xl` centralizado
+- Card com `glass`, `border-glass-border`, `overflow-hidden`
 - Toggle: `openIndex === index ? null : index`
 - Animação: `max-h-40` (aberto) vs `max-h-0` (fechado) com `transition-all duration-300`
 - Chevron com `rotate-180` condicional

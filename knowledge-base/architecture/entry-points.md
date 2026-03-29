@@ -48,7 +48,7 @@ A estrutura de renderização é:
 
 ```
 <HashRouter>
-  <div class="min-h-screen bg-[var(--bg-primary)]">
+  <div class="min-h-screen bg-surface">
     <Header />       ← fixo no topo
     <Routes>         ← conteúdo variável
     <Footer />       ← sempre visível

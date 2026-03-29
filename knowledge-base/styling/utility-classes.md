@@ -77,9 +77,25 @@ box-shadow: 0 20px 40px var(--color-shadow);
 Animação de entrada (não utilizada atualmente nos componentes — substituída pelo hook `useInView`).
 
 ```css
-.fade-in { opacity: 0; transform: translateY(20px); }
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 ```
+
+## Utilitários Tailwind do @theme
+
+Tokens definidos no `@theme` geram utilitários Tailwind automáticos:
+
+| Classe | CSS gerado |
+|---|---|
+| `bg-surface` | `background-color: #ffffff` |
+| `bg-surface-alt` | `background-color: #f8f5fc` |
+| `bg-surface-card` | `background-color: rgba(255, 255, 255, 0.8)` |
+| `text-ink` | `color: #1a0a2e` |
+| `text-ink-alt` | `color: #4a3f5c` |
+| `text-muted` | `color: #6b5d7a` |
+| `border-border` | `border-color: #e8e0f0` |
+| `font-display` | `font-family: 'Clash Display', sans-serif` |
+| `font-body` | `font-family: 'DM Sans', sans-serif` |
 
 ## Animações (Keyframes)
 

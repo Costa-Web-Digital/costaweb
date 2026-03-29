@@ -43,7 +43,7 @@ Página de Política de Privacidade com conteúdo em conformidade com a LGPD.
 
 - Layout: `max-w-3xl`, padding `py-24`
 - Ícone de escudo com `gradient-bg rounded-2xl`
-- Links de contato com `text-[var(--color-primary)] hover:underline`
+- Links de contato com `text-primary hover:underline`
 - Card de contato com `glass rounded-2xl`
 
 ## Rota

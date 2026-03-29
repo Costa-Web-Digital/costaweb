@@ -31,7 +31,7 @@ Seção de depoimentos de clientes com cards de avaliação.
 
 - Estrelas renderizadas com `[...Array(rating)].map()` e `fill-yellow-400`
 - Avatar: `gradient-bg rounded-full` com iniciais extraídas via `name.split(' ').map(n => n[0]).join('')`
-- Card com `glass`, `border-[var(--color-glass-border)]`
+- Card com `glass`, `border-glass-border`
 - Aspas decorativas posicionadas absolutamente no canto superior direito
 
 ## Relacionamentos

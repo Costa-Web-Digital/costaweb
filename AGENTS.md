@@ -33,6 +33,7 @@ Após concluir alterações que modifiquem diretrizes, estrutura, componentes ou
 
 - Arquivos `.jsx` com ESM modules (`type: "module"`)
 - Tailwind CSS para toda estilização (não usar CSS-in-JS)
+- Sempre usar classes Tailwind nativas geradas pelo `@theme` (ex: `text-ink`, `bg-surface`, `border-glass-border`). Nunca usar valores arbitrários com `var()` (ex: `text-[var(--color-ink)]` está errado)
 - Componentes em `src/components/` com export default
 - Hooks em `src/hooks/` com export nomeado
 - Páginas em `src/pages/` representam rotas completas

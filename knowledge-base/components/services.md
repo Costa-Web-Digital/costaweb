@@ -32,7 +32,7 @@ Seção que exibe os 5 serviços oferecidos pela CostaWeb em formato de grade de
 
 ## Padrões
 
-- Cards usam `glass` + `card-hover` + `border-[var(--color-glass-border)]`
+- Cards usam `glass` + `card-hover` + `border-glass-border`
 - Ícone dentro de `gradient-bg rounded-xl`
 - Seção com `id="servicos"` para navegação por rota
 - Header section com `gradient-text` no título

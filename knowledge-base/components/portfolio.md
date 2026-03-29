@@ -32,12 +32,16 @@ Seção de portfólio exibindo projetos fictícios/ilustrativos em cards com gra
 
 ## Padrões
 
-- Seção com `id="portfolio"`, fundo `--color-bg-secondary`
+- Seção com `id="portfolio"`, fundo `--color-surface-alt`
 - Área de cor com `bg-gradient-to-br {project.color}` e overlay `bg-black/20`
 - Badge com `glass` posicionado no topo esquerdo do card
 - Hover mostra overlay centralizado com link "Ver projeto"
 - Cards usam `card-hover` (translate + shadow no hover)
 - Botão final com `gradient-bg`
+
+## Status
+
+**⚠️ Não integrado**: O componente `Portfolio.jsx` existe no código-fonte mas **não é importado nem renderizado** em `App.jsx`. O `HomePage` não inclui a seção de portfólio. Este componente pode ser ativado futuramente importando-o no `HomePage`.
 
 ## Relacionamentos
 

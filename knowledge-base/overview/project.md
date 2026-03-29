@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Site institucional da **CostaWeb**, agência digital especializada em desenvolvimento web, UI/UX e marketing digital. O site apresenta os serviços da agência, portfólio, depoimentos de clientes e canais de contato.
+Site institucional da **CostaWeb**, agência digital especializada em desenvolvimento web, UI/UX e marketing digital. O site apresenta os serviços da agência, depoimentos de clientes e canais de contato.
 
 ## Localização
 
@@ -12,7 +12,7 @@ Repositório: `costaweb/` (raiz do projeto)
 
 - Apresentar a agência e seus serviços (Landing Pages, Sites Estáticos, Sites Dinâmicos, SEO, Tráfego Pago)
 - Capturar leads via WhatsApp e formulário de contato
-- Exibir portfólio, depoimentos e processo de trabalho
+- Exibir depoimentos e processo de trabalho
 - Hospedar páginas legais (Política de Privacidade, Termos de Uso)
 
 ## Detalhes Técnicos
@@ -32,9 +32,10 @@ Repositório: `costaweb/` (raiz do projeto)
 | Por que nós | `WhyUs` | `porque-nos` |
 | Processo | `Process` | `processo` |
 | Depoimentos | `Testimonials` | — |
-| Portfólio | `Portfolio` | `portfolio` |
 | FAQ | `FAQ` | `faq` |
 | Contato | `FinalCTA` | `contato` |
+
+**Nota**: `Portfolio.jsx` existe no código mas não está integrado ao `HomePage`. Ver [portfolio.md](../components/portfolio.md#status).
 
 ## Páginas Secundárias
 

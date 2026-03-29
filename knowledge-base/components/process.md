@@ -31,7 +31,7 @@ Seção visual do fluxo de trabalho em 5 etapas, com ícones e conectores.
 
 ## Padrões
 
-- Seção com `id="processo"`, fundo `--color-bg-primary`
+- Seção com `id="processo"`, fundo `--color-surface`
 - Ícones com `animate-pulse-glow` (keyframe customizado no index.css)
 - Conectores: `border-t-2 border-dashed` posicionados absolutamente
 - Delay escalonado de 150ms entre etapas

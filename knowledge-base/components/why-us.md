@@ -30,8 +30,8 @@ Seção de diferenciais da CostaWeb, exibindo 4 cards com estatísticas.
 
 ## Padrões
 
-- Seção com `id="porque-nos"`, fundo `--color-bg-secondary`
-- Cards com `glass`, `border-[var(--color-glass-border)]`
+- Seção com `id="porque-nos"`, fundo `--color-surface-alt`
+- Cards com `glass`, `border-glass-border`
 - Ícone dentro de `gradient-bg rounded-2xl` centralizado
 - Estatística com `gradient-text`, separada por `border-t`
 

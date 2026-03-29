@@ -56,6 +56,10 @@ Todos apontam para seção `servicos`:
 - SVGs inline para ícones sociais (não usa Lucide para estes)
 - Copyright: "© 2025 CostaWeb. Todos os direitos reservados."
 
+## Known Issues
+
+- **Bug `scrollToSection`**: O componente chama `scrollToSection(link.id)` mas o hook `useScrollTo` retorna uma função chamada `scrollTo`. Os links rápidos e de serviços no footer podem apresentar erro de runtime (`scrollToSection is not defined`).
+
 ## Relacionamentos
 
 - [routing.md](../architecture/routing.md) — navegação

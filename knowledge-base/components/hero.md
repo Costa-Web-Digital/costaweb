@@ -34,7 +34,7 @@ Hero/
 ### Background
 
 - 3 divs com gradientes blurados (primary, secondary, accent)
-- Fundo com `bg-[var(--color-bg-secondary)]`
+- Fundo com `bg-surface-alt`
 - Puramente decorativo, sem interatividade
 
 ### Title
@@ -45,7 +45,7 @@ Hero/
 ### Tagline
 
 - `<p>` com descrição dos serviços da agência
-- Cor `--color-text-muted`
+- Cor `--color-muted`
 
 ### CTA
 
@@ -62,7 +62,7 @@ Hero/
 ### DesignMock
 
 - Mockup estilizado de browser com barras de placeholder
-- Classe `animate-ffloat` para efeito flutuante
+- Classe `animate-float` para efeito flutuante
 - Badges flutuantes: "Completamente personalizável" e "100% Responsivo"
 - Usa `glass` e `gradient-bg`
 
