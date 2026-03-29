@@ -11,18 +11,12 @@ Seção que exibe os 5 serviços oferecidos pela CostaWeb em formato de grade de
 ## Responsabilidade
 
 - Renderizar grid responsiva (1/2/3 colunas) de cards de serviço
-- Cada card: ícone, título, descrição e botão "Saber mais"
+- Cada card: ícone, título, descrição e botão de ação
 - Animação de entrada escalonada (delay de 100ms por card)
 
 ## Serviços
 
-| Ícone | Título |
-|---|---|
-| `Monitor` | Landing Pages |
-| `Globe` | Sites Estáticos |
-| `Database` | Sites Dinâmicos |
-| `Search` | Tráfego Orgânico (SEO) |
-| `TrendingUp` | Tráfego Pago (ADS) |
+Tabela de serviços configurável com ícones Lucide.
 
 ## Dependências
 

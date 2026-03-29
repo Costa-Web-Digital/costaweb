@@ -15,18 +15,9 @@ Página de Política de Privacidade com conteúdo em conformidade com a LGPD.
 - Atualizar `document.title` para "Política de Privacidade — CostaWeb"
 - Link de retorno ao início
 
-## Seções
+## Conteúdo
 
-1. Compromisso com a privacidade (intro)
-2. Quais dados coletamos
-3. Como usamos seus dados
-4. Compartilhamento de dados
-5. Cookies
-6. Armazenamento e segurança
-7. Seus direitos (LGPD)
-8. Links externos
-9. Alterações nesta política
-10. Contato
+O conteúdo textual (títulos de seção, parágrafos, listas) é editado diretamente no componente JSX. A estrutura usa subcomponentes auxiliares `Section` e `Item` para formatação consistente.
 
 ## Componentes Auxiliares
 

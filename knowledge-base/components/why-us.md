@@ -10,18 +10,13 @@ Seção de diferenciais da CostaWeb, exibindo 4 cards com estatísticas.
 
 ## Responsabilidade
 
-- Exibir 4 diferenciais em grid responsiva (1/2/4 colunas)
+- Exibir série de diferenciais em grid responsiva (1/2/4 colunas)
 - Cada card: ícone, título, descrição, estatística e label
 - Animação de entrada escalonada (delay de 100ms)
 
 ## Diferenciais
 
-| Ícone | Título | Estatística |
-|---|---|---|
-| `Zap` | Entrega Rápida | 7 dias |
-| `Headphones` | Suporte Dedicado | 24/7 |
-| `TrendingUp` | Foco em Conversão | +50% |
-| `Shield` | Transparência Total | 100% |
+Tabela de diferenciais configurável com ícones Lucide e estatísticas ilustrativas.
 
 ## Dependências
 

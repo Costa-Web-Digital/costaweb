@@ -61,11 +61,11 @@ const SECTION_ROUTES = {
 
 ## Componentes Relacionados
 
-- **Header** — links de navegação + CTA "Falar no WhatsApp"
+- **Header** — links de navegação + CTA principal
 - **Footer** — links rápidos e de serviços
-- **Hero/CTA** — botão "Quero meu site agora" → `contato`
-- **Services** — cada card tem botão "Saber mais" → `contato`
-- **FinalCTA** — botão "Ver serviços" → `servicos`
+- **Hero/CTA** — botão principal → `contato`
+- **Services** — cada card tem botão de ação → `contato`
+- **FinalCTA** — botão secundário → `servicos`
 
 ## Relacionamentos
 

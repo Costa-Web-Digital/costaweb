@@ -10,11 +10,11 @@ Rodapé do site com 4 colunas: marca, links rápidos, serviços e contato.
 
 ## Responsabilidade
 
-- Exibir logo e descrição da CostaWeb
-- Links rápidos para seções da página (Serviços, Por que nós, Processo, FAQ)
-- Lista de serviços (Landing Pages, Sites Estáticos, Sites Dinâmicos, SEO, Tráfego Pago)
+- Exibir logo e descrição da empresa
+- Links rápidos para seções da página (rótulos configuráveis)
+- Lista de serviços (itens configuráveis)
 - Informações de contato (WhatsApp e e-mail)
-- Ícones de redes sociais (Instagram, LinkedIn, Facebook, Twitter/X)
+- Ícones de redes sociais
 - Barra inferior com copyright e links legais
 
 ## Dependências
@@ -27,22 +27,16 @@ Rodapé do site com 4 colunas: marca, links rápidos, serviços e contato.
 
 ### Rápidos
 
-| Label | Seção |
-|---|---|
-| Serviços | `servicos` |
-| Por que nós | `porque-nos` |
-| Processo | `processo` |
-| FAQ | `faq` |
+Rótulos e seções configuráveis para navegação principal.
 
 ### Serviços
 
-Todos apontam para seção `servicos`:
-- Landing Pages, Sites Estáticos, Sites Dinâmicos, SEO, Tráfego Pago
+Itens configuráveis, todos apontam para seção `servicos`.
 
 ### Contato
 
-- WhatsApp: `wa.me/5511999639567`
-- E-mail: `contato@costaweb.com.br`
+- WhatsApp: link configurável
+- E-mail: link configurável
 
 ### Legais
 
@@ -54,7 +48,7 @@ Todos apontam para seção `servicos`:
 - Grid 4 colunas (sm: 2, lg: 4) com `border-t` superior
 - Ícones de redes sociais em `glass rounded-xl` com hover
 - SVGs inline para ícones sociais (não usa Lucide para estes)
-- Copyright: "© 2025 CostaWeb. Todos os direitos reservados."
+- Copyright texto configurável
 
 ## Known Issues
 

@@ -44,10 +44,10 @@ Se o `sectionId` não existir no mapa, navega para `/` (home).
 | Componente | Chamada |
 |---|---|
 | Header | `scrollTo(link.id)` nos links de navegação |
-| Header | `scrollTo('contato')` no CTA "Falar no WhatsApp" |
+| Header | `scrollTo('contato')` no CTA principal |
 | Hero/CTA | `scrollTo('contato')` no botão principal |
-| Services | `scrollTo('contato')` no "Saber mais" de cada card |
-| FinalCTA | `scrollTo('servicos')` no botão "Ver serviços" |
+| Services | `scrollTo('contato')` no botão de ação de cada card |
+| FinalCTA | `scrollTo('servicos')` no botão secundário |
 | Footer | `scrollTo(link.id)` nos links rápidos e de serviços |
 
 ## Relacionamentos

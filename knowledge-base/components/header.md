@@ -10,9 +10,9 @@ Navegação fixa no topo com logo, links de seção, CTA para WhatsApp e menu mo
 
 ## Responsabilidade
 
-- Exibir logo "CostaWeb" com link para home
-- Renderizar navegação desktop (Serviços, Por que nós, Processo, FAQ)
-- Botão CTA "Falar no WhatsApp" (desktop)
+- Exibir logo com link para home
+- Renderizar navegação desktop (rótulos configuráveis)
+- Botão CTA principal (desktop)
 - Menu hamburger com navegação mobile (toggle)
 - Efeito glass com sombra ao scrollar (após 50px)
 

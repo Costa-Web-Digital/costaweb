@@ -10,19 +10,13 @@ Seção visual do fluxo de trabalho em 5 etapas, com ícones e conectores.
 
 ## Responsabilidade
 
-- Exibir 5 etapas do processo de trabalho em grid horizontal (desktop) ou vertical (mobile)
+- Exibir etapas do processo de trabalho em grid horizontal (desktop) ou vertical (mobile)
 - Cada etapa: ícone com animação pulse-glow, número (mobile), título e descrição
 - Linhas conectoras tracejadas entre etapas (apenas desktop, lg+)
 
 ## Etapas
 
-| # | Ícone | Título |
-|---|---|---|
-| 1 | `FileText` | Briefing |
-| 2 | `PenTool` | Proposta |
-| 3 | `Code` | Desenvolvimento |
-| 4 | `Rocket` | Entrega |
-| 5 | `Headphones` | Suporte |
+Tabela de etapas configurável com ícones Lucide.
 
 ## Dependências
 

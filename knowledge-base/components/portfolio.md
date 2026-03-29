@@ -10,20 +10,13 @@ Seção de portfólio exibindo projetos fictícios/ilustrativos em cards com gra
 
 ## Responsabilidade
 
-- Exibir 6 projetos em grid responsiva (1/2/3 colunas)
-- Cada card: área de cor gradient, badge de tipo, overlay no hover com link "Ver projeto"
-- Botão "Ver todos os projetos" no final
+- Exibir série de projetos em grid responsiva (1/2/3 colunas)
+- Cada card: área de cor gradient, badge de tipo, overlay no hover com link de visualização
+- Botão de ação final "Ver todos os projetos"
 
 ## Projetos
 
-| Título | Tipo | Categoria | Gradiente |
-|---|---|---|---|
-| TechStore E-commerce | Site Dinâmico | E-commerce | blue → cyan |
-| HealthClinic Landing | Landing Page | Saúde | green → emerald |
-| FinanceHub | Site Estático | Finanças | purple → pink |
-| FoodDelivery App | Site Dinâmico | Alimentação | orange → red |
-| EduOnline Platform | Site Dinâmico | Educação | indigo → blue |
-| RealEstate Pro | Landing Page | Imóveis | teal → cyan |
+Tabela de projetos configurável com tipos, categorias e gradientes.
 
 ## Dependências
 

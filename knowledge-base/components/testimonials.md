@@ -10,17 +10,13 @@ Seção de depoimentos de clientes com cards de avaliação.
 
 ## Responsabilidade
 
-- Exibir 3 depoimentos em grid responsiva (1/2/3 colunas)
+- Exibir série de depoimentos em grid responsiva (1/2/3 colunas)
 - Cada card: estrelas de avaliação, citação, avatar com iniciais e informações do cliente
 - Ícone decorativo de aspas (`Quote`)
 
 ## Depoimentos
 
-| Nome | Cargo | Avaliação |
-|---|---|---|
-| Carlos Eduardo | CEO, TechStore | 5 estrelas |
-| Mariana Silva | Diretora, HealthClinic | 5 estrelas |
-| Roberto Ferreira | Fundador, FinanceHub | 5 estrelas |
+Lista de depoimentos configurável com nomes, cargos e avaliações.
 
 ## Dependências
 

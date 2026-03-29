@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Call-to-action final com fundo gradient e dois botões de ação (WhatsApp e Ver serviços).
+Call-to-action final com fundo gradient e dois botões de ação configuráveis.
 
 ## Localização
 
@@ -10,9 +10,9 @@ Call-to-action final com fundo gradient e dois botões de ação (WhatsApp e Ver
 
 ## Responsabilidade
 
-- Exibir headline "Pronto para crescer online?" com fundo gradient
-- Botão principal: "Falar no WhatsApp" → link externo para `wa.me/5511999639567`
-- Botão secundário: "Ver serviços" → scroll para seção `servicos`
+- Exibir headline principal com fundo gradient
+- Botão principal com link externo para WhatsApp
+- Botão secundário com scroll para seção `servicos`
 - Padrão decorativo SVG no fundo (grid de pontos)
 
 ## Dependências

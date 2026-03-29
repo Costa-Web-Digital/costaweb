@@ -51,3 +51,7 @@ Após qualquer alteração de código, rodar:
 - Imports relativos quando possível
 - Não adicionar comentários desnecessários
 - Seguir o padrão existente em arquivos vizinhos
+
+## Conteúdo vs. Estrutura na Knowledge-Base
+
+A knowledge-base deve documentar **estrutura, comportamento e padrões**, nunca conteúdo textual específico. Nunca incluir nomes de serviços, labels de botões, títulos de seções ou textos de componentes. O conteúdo é editado diretamente nos arquivos `.jsx`; a knowledge-base deve apenas descrever como o componente funciona e quais padrões segue.

@@ -10,7 +10,7 @@ Repositório: `costaweb/` (raiz do projeto)
 
 ## Responsabilidade
 
-- Apresentar a agência e seus serviços (Landing Pages, Sites Estáticos, Sites Dinâmicos, SEO, Tráfego Pago)
+- Apresentar a agência e seus serviços (configuráveis no componente Services)
 - Capturar leads via WhatsApp e formulário de contato
 - Exibir depoimentos e processo de trabalho
 - Hospedar páginas legais (Política de Privacidade, Termos de Uso)

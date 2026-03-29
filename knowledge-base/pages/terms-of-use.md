@@ -15,18 +15,9 @@ Página de Termos de Uso do site CostaWeb.
 - Atualizar `document.title` para "Termos de Uso — CostaWeb"
 - Link de retorno ao início
 
-## Seções
+## Conteúdo
 
-1. Introdução
-2. Aceitação dos termos (link para Política de Privacidade)
-3. Descrição dos serviços
-4. Uso do site (condutas permitidas/proibidas)
-5. Propriedade intelectual
-6. Isenção de responsabilidade
-7. Orçamentos e contratos de serviço
-8. Links para terceiros
-9. Legislação aplicável (foro de São Paulo — SP)
-10. Contato
+O conteúdo textual (títulos de seção, parágrafos, listas) é editado diretamente no componente JSX. A estrutura usa subcomponentes auxiliares `Section` e `Item` para formatação consistente.
 
 ## Componentes Auxiliares
 

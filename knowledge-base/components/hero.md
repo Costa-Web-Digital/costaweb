@@ -10,7 +10,7 @@ Seção principal da landing page, renderizada em tela cheia com título, subtí
 
 ## Arquitetura
 
-O Hero é o único componente organizado em subdiretório, com subcomponentes usando exportações nomeadas:
+O Hero é o único componente organizado em subdiretório com subcomponentes:
 
 ```
 Hero/
@@ -39,31 +39,31 @@ Hero/
 
 ### Title
 
-- `<h1>` com texto "Seu negócio na internet do jeito certo"
-- Classe `gradient-text` na linha "na internet"
+- `<h1>` com headline principal do componente
+- Classe `gradient-text` aplicada em trecho destacado
 
 ### Tagline
 
-- `<p>` com descrição dos serviços da agência
+- `<p>` com descrição introdutória
 - Cor `--color-muted`
 
 ### CTA
 
-- Botão "Quero meu site agora" com ícone `ArrowRight`
-- Usa `useScrollTo('contato')` para navegar ao WhatsApp
+- Botão de ação principal com ícone `ArrowRight`
+- Usa `useScrollTo('contato')` para navegação ao contato
 - Classe `gradient-bg`
 
 ### Highlights
 
-- 3 estatísticas: "15 anos", "98%", "50"
+- Estatísticas ilustrativas do componente
 - Separadas por dividers verticais
-- Texto dos stats usa `gradient-text`
+- Texto com `gradient-text`
 
 ### DesignMock
 
 - Mockup estilizado de browser com barras de placeholder
 - Classe `animate-float` para efeito flutuante
-- Badges flutuantes: "Completamente personalizável" e "100% Responsivo"
+- Badges flutuantes ilustrativos
 - Usa `glass` e `gradient-bg`
 
 ## Relacionamentos
