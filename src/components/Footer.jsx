@@ -101,7 +101,7 @@ export default function Footer() {
 							{quickLinks.map((link) => (
 								<li key={link.label}>
 									<button
-										onClick={() => scrollToSection(link.id)}
+										onClick={() => scrollTo(link.id)}
 										className="text-muted hover:text-primary transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
 									>
 										{link.label}
@@ -117,7 +117,7 @@ export default function Footer() {
 							{services.map((link) => (
 								<li key={link.label}>
 									<button
-										onClick={() => scrollToSection(link.id)}
+										onClick={() => scrollTo(link.id)}
 										className="text-muted hover:text-primary transition-colors text-sm cursor-pointer bg-transparent border-0 p-0 text-left"
 									>
 										{link.label}

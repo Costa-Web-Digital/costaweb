@@ -134,3 +134,4 @@ O script executa `vite build` e envia o conteúdo de `dist/` para a branch `gh-p
 ## Atualizações
 
 - **v1.1.1**: Teste de integração de notificações via Telegram.
+- **v1.1.2**: Corrigido bug de navegação nos links do rodapé.
