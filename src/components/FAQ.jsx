@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
@@ -33,9 +33,9 @@ export default function FAQ() {
 	const [isVisible, sectionRef] = useInView();
 	const [openIndex, setOpenIndex] = useState(null);
 
-	const toggleFAQ = (index) => {
-		setOpenIndex(openIndex === index ? null : index);
-	};
+	const toggleFAQ = useCallback((index) => {
+		setOpenIndex(prev => prev === index ? null : index);
+	}, []);
 
 	return (
 		<section

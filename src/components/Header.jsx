@@ -1,25 +1,46 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { useScrollTo } from '../hooks/useScrollTo';
+
+const NAV_LINKS = [
+	{ label: 'Serviços', id: 'servicos' },
+	{ label: 'Por que nós', id: 'porque-nos' },
+	{ label: 'Processo', id: 'processo' },
+	{ label: 'FAQ', id: 'faq' },
+];
 
 export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const scrollTo = useScrollTo();
 
-	useEffect(() => {
-		const handleScroll = () => setIsScrolled(window.scrollY > 50);
-		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('scroll', handleScroll);
+	const handleScroll = useCallback(() => {
+		setIsScrolled(window.scrollY > 50);
 	}, []);
 
-	const navLinks = [
-		{ label: 'Serviços', id: 'servicos' },
-		{ label: 'Por que nós', id: 'porque-nos' },
-		{ label: 'Processo', id: 'processo' },
-		{ label: 'FAQ', id: 'faq' },
-	];
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [handleScroll]);
+
+	const handleNavClick = useCallback((id) => {
+		scrollTo(id);
+	}, [scrollTo]);
+
+	const handleContactClick = useCallback(() => {
+		scrollTo('contato');
+	}, [scrollTo]);
+
+	const handleMobileContactClick = useCallback(() => {
+		scrollTo('contato');
+		setMobileMenuOpen(false);
+	}, [scrollTo]);
+
+	const handleMobileNavClick = useCallback((id) => {
+		scrollTo(id);
+		setMobileMenuOpen(false);
+	}, [scrollTo]);
 
 	return (
 		<header
@@ -38,20 +59,20 @@ export default function Header() {
 				</Link>
 
 				<nav className="hidden md:flex items-center gap-8">
-					{navLinks.map((link) => (
+					{NAV_LINKS.map((link) => (
 						<button
 							key={link.id}
-							onClick={() => scrollTo(link.id)}
+							onClick={() => handleNavClick(link.id)}
 							className="text-ink-alt hover:text-primary transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
 						>
 								{link.label}
 							</button>
-						))}
-					</nav>
+					))}
+				</nav>
 
 					<div className="flex items-center gap-3">
 						<button
-							onClick={() => scrollTo('contato')}
+							onClick={handleContactClick}
 							className="hidden md:flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
 						>
 							Entre em contato agora
@@ -75,17 +96,17 @@ export default function Header() {
 				{mobileMenuOpen && (
 					<div className="md:hidden mt-4 glass rounded-2xl p-4">
 						<nav className="flex flex-col gap-4">
-							{navLinks.map((link) => (
+							{NAV_LINKS.map((link) => (
 								<button
 									key={link.id}
-									onClick={() => { scrollTo(link.id); setMobileMenuOpen(false); }}
+									onClick={() => handleMobileNavClick(link.id)}
 									className="text-left text-ink-alt hover:text-primary transition-colors font-medium py-2 cursor-pointer bg-transparent border-0 w-full"
 								>
 									{link.label}
 								</button>
 							))}
 							<button
-								onClick={() => { scrollTo('contato'); setMobileMenuOpen(false); }}
+								onClick={handleMobileContactClick}
 								className="flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-3 rounded-xl font-semibold cursor-pointer border-0 w-full"
 							>
 								Entre em contato agora

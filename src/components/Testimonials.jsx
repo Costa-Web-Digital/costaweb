@@ -1,5 +1,48 @@
+import { memo } from 'react';
 import { Quote, Star } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+
+const TestimonialCard = memo(function TestimonialCard({ testimonial, index, isVisible }) {
+	return (
+		<div
+			className={`relative glass rounded-2xl p-6 border border-glass-border transition-all duration-700 ${
+				isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+			}`}
+			style={{ transitionDelay: `${index * 100}ms` }}
+		>
+			<Quote className="absolute top-4 right-4 w-8 h-8 text-primary opacity-20" />
+
+			<div className="flex gap-1 mb-4">
+				{[...Array(testimonial.rating)].map((_, i) => (
+					<Star
+						key={i}
+						className="w-5 h-5 fill-yellow-400 text-yellow-400"
+					/>
+				))}
+			</div>
+
+			<p className="text-ink-alt mb-6 leading-relaxed">
+				"{testimonial.content}"
+			</p>
+
+			<div className="flex items-center gap-4">
+				<div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+					<span className="text-white font-semibold">
+						{testimonial.name.split(' ').map(n => n[0]).join('')}
+					</span>
+				</div>
+				<div>
+					<p className="font-semibold text-ink">
+						{testimonial.name}
+					</p>
+					<p className="text-sm text-muted">
+						{testimonial.role}
+					</p>
+				</div>
+			</div>
+		</div>
+	);
+});
 
 const testimonials = [
 	{
@@ -47,44 +90,12 @@ export default function Testimonials() {
 
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					{testimonials.map((testimonial, index) => (
-						<div
+						<TestimonialCard
 							key={testimonial.name}
-							className={`relative glass rounded-2xl p-6 border border-glass-border transition-all duration-700 ${
-								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-							}`}
-							style={{ transitionDelay: `${index * 100}ms` }}
-						>
-							<Quote className="absolute top-4 right-4 w-8 h-8 text-primary opacity-20" />
-
-							<div className="flex gap-1 mb-4">
-								{[...Array(testimonial.rating)].map((_, i) => (
-									<Star
-										key={i}
-										className="w-5 h-5 fill-yellow-400 text-yellow-400"
-									/>
-								))}
-							</div>
-
-							<p className="text-ink-alt mb-6 leading-relaxed">
-								"{testimonial.content}"
-							</p>
-
-							<div className="flex items-center gap-4">
-								<div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-									<span className="text-white font-semibold">
-										{testimonial.name.split(' ').map(n => n[0]).join('')}
-									</span>
-								</div>
-								<div>
-									<p className="font-semibold text-ink">
-										{testimonial.name}
-									</p>
-									<p className="text-sm text-muted">
-										{testimonial.role}
-									</p>
-								</div>
-							</div>
-						</div>
+							testimonial={testimonial}
+							index={index}
+							isVisible={isVisible}
+						/>
 					))}
 				</div>
 			</div>

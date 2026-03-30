@@ -1,6 +1,38 @@
+import { memo } from 'react';
 import { ArrowRight, Database, Globe, Monitor, Search, TrendingUp } from 'lucide-react';
 import { useScrollTo } from '../hooks/useScrollTo';
 import { useInView } from '../hooks/useInView';
+
+const ServiceCard = memo(function ServiceCard({ service, index, isVisible, scrollTo }) {
+	return (
+		<div
+			className={`group glass rounded-2xl p-6 border border-glass-border card-hover transition-all duration-700 ${
+				isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+			}`}
+			style={{ transitionDelay: `${index * 100}ms` }}
+		>
+			<div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+				<service.icon className="w-7 h-7 text-white" />
+			</div>
+
+			<h3 className="text-xl font-semibold mb-3 text-ink">
+				{service.title}
+			</h3>
+
+			<p className="text-muted mb-5 text-sm leading-relaxed">
+				{service.description}
+			</p>
+
+			<button
+				onClick={() => scrollTo('contato')}
+				className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all cursor-pointer bg-transparent border-0 p-0"
+			>
+				Saber mais
+				<ArrowRight className="w-4 h-4" />
+			</button>
+		</div>
+	);
+});
 
 const services = [
 	{
@@ -58,33 +90,13 @@ export default function Services() {
 
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 					{services.map((service, index) => (
-						<div
+						<ServiceCard
 							key={service.title}
-							className={`group glass rounded-2xl p-6 border border-glass-border card-hover transition-all duration-700 ${
-								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-							}`}
-							style={{ transitionDelay: `${index * 100}ms` }}
-						>
-							<div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-								<service.icon className="w-7 h-7 text-white" />
-							</div>
-
-							<h3 className="text-xl font-semibold mb-3 text-ink">
-								{service.title}
-							</h3>
-
-							<p className="text-muted mb-5 text-sm leading-relaxed">
-								{service.description}
-							</p>
-
-							<button
-								onClick={() => scrollTo('contato')}
-								className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all cursor-pointer bg-transparent border-0 p-0"
-							>
-								Saber mais
-								<ArrowRight className="w-4 h-4" />
-							</button>
-						</div>
+							service={service}
+							index={index}
+							isVisible={isVisible}
+							scrollTo={scrollTo}
+						/>
 					))}
 				</div>
 			</div>
