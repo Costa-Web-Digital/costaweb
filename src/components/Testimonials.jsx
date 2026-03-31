@@ -1,8 +1,7 @@
-import { memo } from 'react';
 import { Quote, Star } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
-const TestimonialCard = memo(function TestimonialCard({ testimonial, index, isVisible }) {
+function TestimonialCard({ testimonial, index, isVisible }) {
 	return (
 		<div
 			className={`relative glass rounded-2xl p-6 border border-glass-border transition-all duration-700 ${
@@ -42,25 +41,25 @@ const TestimonialCard = memo(function TestimonialCard({ testimonial, index, isVi
 			</div>
 		</div>
 	);
-});
+}
 
 const testimonials = [
 	{
 		name: 'Carlos Eduardo',
 		role: 'CEO, TechStore',
-		content: 'Nossa conversão tripled após o novo site. A CostaWeb entendeu exatamente o que precisávamos e entregou além do esperado. Recomendo demais!',
+		content: 'Nossa conversão triplicou após o novo site. A CostaWeb entendeu exatamente o que precisávamos e entregou além do esperado. Recomendo demais!',
 		rating: 5,
 	},
 	{
 		name: 'Mariana Silva',
 		role: 'Diretora, HealthClinic',
-		content: 'Equipe muito profissional e atenciosa. O site ficou lindo e as campanhas de Ads trouxe pacientes qualificados. ROI super positivo!',
+		content: 'Equipe muito profissional e atenciosa. O site ficou lindo e as campanhas de Ads trouxeram pacientes qualificados. ROI super positivo!',
 		rating: 5,
 	},
 	{
 		name: 'Roberto Ferreira',
 		role: 'Fundador, FinanceHub',
-		content: '转型 do nosso negócio online foi completa. Site rápido, bonito e funcional. O suporte pós-entrega também é excelente.',
+		content: 'A transformação do nosso negócio online foi completa. Site rápido, bonito e funcional. O suporte pós-entrega também é excelente.',
 		rating: 5,
 	},
 ];
@@ -83,7 +82,7 @@ export default function Testimonials() {
 						O que dizem nossos <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Clientes</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
-						A opinião de quem já trabalha conosco é o maior indikator de qualidade.
+						A opinião de quem já trabalha conosco é o maior indicador de qualidade.
 						Aqui estão alguns feedbacks.
 					</p>
 				</div>

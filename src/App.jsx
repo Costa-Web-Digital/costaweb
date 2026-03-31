@@ -11,21 +11,13 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
-
-// Section routes map: route path → section element ID
-const SECTION_ROUTES = {
-	'/servicos': 'servicos',
-	'/porque-nos': 'porque-nos',
-	'/processo': 'processo',
-	'/faq': 'faq',
-	'/contato': 'contato',
-};
+import { SECTION_ROUTES, ROUTE_TO_SECTION } from './hooks/useScrollTo';
 
 function HomePage() {
 	const { pathname } = useLocation();
 
 	useEffect(() => {
-		const sectionId = SECTION_ROUTES[pathname];
+		const sectionId = ROUTE_TO_SECTION[pathname];
 		if (sectionId) {
 			// Small delay to ensure DOM is ready
 			const timer = setTimeout(() => {

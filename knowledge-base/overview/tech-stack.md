@@ -38,7 +38,7 @@ Dependências e ferramentas utilizadas no projeto CostaWeb.
 
 | Fonte | Uso | Carregamento |
 |---|---|---|
-| [Clash Display](https://www.fontshare.com/fonts/clash-display) | Headings (h1-h6) | Preload + async via Fontshare API |
+| [Montserrat](https://fonts.google.com/specimen/Montserrat) | Headings (h1-h6) | Preload + async via Google Fonts |
 | [DM Sans](https://fonts.google.com/specimen/DM+Sans) | Body text | Preload + async via Google Fonts |
 
 ## Relacionamentos

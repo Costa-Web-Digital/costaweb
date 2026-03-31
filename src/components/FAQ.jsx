@@ -25,7 +25,7 @@ const faqs = [
 	},
 	{
 		question: 'Oferecem manutenção após a entrega?',
-		answer: 'Sim!Temos planos de manutenção flexíveis que incluem atualizações, ajustes, suporte técnico e backup. Você pode contratar por demanda ou plano mensal, conforme sua necessidade.',
+		answer: 'Sim! Temos planos de manutenção flexíveis que incluem atualizações, ajustes, suporte técnico e backup. Você pode contratar por demanda ou plano mensal, conforme sua necessidade.',
 	},
 ];
 
@@ -68,9 +68,11 @@ export default function FAQ() {
 						>
 							<button
 								onClick={() => toggleFAQ(index)}
+								aria-expanded={openIndex === index}
+								aria-controls={`faq-answer-${index}`}
 								className="w-full flex items-center justify-between p-5 text-left"
 							>
-								<span className="font-semibold text-ink pr-4">
+								<span id={`faq-question-${index}`} className="font-semibold text-ink pr-4">
 									{faq.question}
 								</span>
 								<ChevronDown
@@ -81,8 +83,11 @@ export default function FAQ() {
 							</button>
 
 							<div
+								id={`faq-answer-${index}`}
+								role="region"
+								aria-labelledby={`faq-question-${index}`}
 								className={`overflow-hidden transition-all duration-300 ${
-									openIndex === index ? 'max-h-40' : 'max-h-0'
+									openIndex === index ? 'max-h-96' : 'max-h-0'
 								}`}
 							>
 								<p className="px-5 pb-5 text-muted">

@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 
-// Maps section IDs to route paths and back
 const SECTION_ROUTES = {
 	servicos: '/servicos',
 	'porque-nos': '/porque-nos',
@@ -8,6 +7,10 @@ const SECTION_ROUTES = {
 	faq: '/faq',
 	contato: '/contato',
 };
+
+const ROUTE_TO_SECTION = Object.fromEntries(
+	Object.entries(SECTION_ROUTES).map(([section, route]) => [route, section]),
+);
 
 export function useScrollTo() {
 	const navigate = useNavigate();
@@ -18,4 +21,4 @@ export function useScrollTo() {
 	};
 }
 
-export { SECTION_ROUTES };
+export { SECTION_ROUTES, ROUTE_TO_SECTION };

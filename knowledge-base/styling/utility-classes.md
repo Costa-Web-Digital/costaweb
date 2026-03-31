@@ -49,15 +49,6 @@ box-shadow: 0 20px 40px var(--color-shadow);
 
 **Uso**: Cards de serviço, cards de portfólio.
 
-### `.fade-in` / `.fade-in.visible`
-
-Animação de entrada (não utilizada atualmente nos componentes — substituída pelo hook `useInView`).
-
-```css
-.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
-```
-
 ## Utilitários Tailwind do @theme
 
 Tokens definidos no `@theme` geram utilitários Tailwind automáticos:
@@ -74,7 +65,7 @@ Tokens definidos no `@theme` geram utilitários Tailwind automáticos:
 | `text-ink-alt` | `color: #4a3f5c` |
 | `text-muted` | `color: #6b5d7a` |
 | `border-border` | `border-color: #e8e0f0` |
-| `font-display` | `font-family: 'Clash Display', sans-serif` |
+| `font-display` | `font-family: 'Montserrat', sans-serif` |
 | `font-body` | `font-family: 'DM Sans', sans-serif` |
 
 ## Animações (Keyframes)

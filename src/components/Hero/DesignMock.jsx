@@ -1,8 +1,8 @@
 export const DesignMock = () => (
-	<div className="relative animate-float">
+	<div className="relative animate-float overflow-visible p-4 sm:p-0">
 		<div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-20 rounded-3xl blur-2xl" />
 
-		<div className="relative glass rounded-3xl p-8 border border-glass-border">
+		<div className="relative glass rounded-3xl p-8 border border-glass-border overflow-hidden">
 			<div className="flex items-center gap-4 mb-6">
 				<div className="flex gap-2">
 					<div className="w-3 h-3 rounded-full bg-red-400" />

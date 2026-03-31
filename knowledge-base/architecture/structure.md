@@ -14,11 +14,8 @@ Organização de diretórios e arquivos do projeto CostaWeb.
 costaweb/
 ├── public/                    # Assets estáticos servidos diretamente
 │   ├── favicon.png
-│   ├── og-image.png
-│   └── icons.svg
+│   └── og-image.png
 ├── src/                       # Código-fonte da aplicação
-│   ├── assets/                # Assets importados via bundler
-│   │   └── hero.png
 │   ├── components/            # Componentes React reutilizáveis
 │   │   ├── Hero/              # Hero section (componente com subcomponentes)
 │   │   │   ├── Hero.jsx       # Container principal
@@ -36,7 +33,8 @@ costaweb/
 │   │   ├── Portfolio.jsx      # Galeria de projetos
 │   │   ├── FAQ.jsx            # Perguntas frequentes (accordion)
 │   │   ├── FinalCTA.jsx       # Call-to-action final com WhatsApp
-│   │   └── Footer.jsx         # Rodapé com links e contato
+│   │   ├── Footer.jsx         # Rodapé com links e contato
+│   │   └── LegalComponents.jsx # Componentes auxiliares para páginas legais
 │   ├── hooks/                 # Hooks customizados React
 │   │   ├── useScrollTo.js     # Navegação entre seções via rota
 │   │   └── useInView.js       # IntersectionObserver para animações

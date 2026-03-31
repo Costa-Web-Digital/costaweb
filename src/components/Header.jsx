@@ -44,31 +44,32 @@ export default function Header() {
 
 	return (
 		<header
-			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass shadow-lg py-3' : 'bg-transparent py-5'
-				}`}
+			className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+				isScrolled ? 'glass shadow-lg py-3' : 'bg-transparent py-5'
+			}`}
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between">
 					<Link to="/" className="flex items-center gap-2">
 						<div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-						<span className="text-white font-bold text-xl font-display">C</span>
-					</div>
-					<span className="text-xl font-bold font-display text-ink">
-						CostaWeb
-					</span>
-				</Link>
+							<span className="text-white font-bold text-xl font-display">C</span>
+						</div>
+						<span className="text-xl font-bold font-display text-ink">
+							CostaWeb
+						</span>
+					</Link>
 
-				<nav className="hidden md:flex items-center gap-8">
-					{NAV_LINKS.map((link) => (
-						<button
-							key={link.id}
-							onClick={() => handleNavClick(link.id)}
-							className="text-ink-alt hover:text-primary transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
-						>
+					<nav className="hidden md:flex items-center gap-8">
+						{NAV_LINKS.map((link) => (
+							<button
+								key={link.id}
+								onClick={() => handleNavClick(link.id)}
+								className="text-ink-alt hover:text-primary transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
+							>
 								{link.label}
 							</button>
-					))}
-				</nav>
+						))}
+					</nav>
 
 					<div className="flex items-center gap-3">
 						<button
@@ -81,14 +82,15 @@ export default function Header() {
 
 						<button
 							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-						className="md:hidden p-2 rounded-xl bg-surface-alt"
-						aria-label="Menu"
-					>
-						{mobileMenuOpen ? (
-							<X className="w-6 h-6 text-ink" />
-						) : (
-							<Menu className="w-6 h-6 text-ink" />
-						)}
+							className="md:hidden p-2 rounded-xl bg-surface-alt"
+							aria-label="Menu"
+							aria-expanded={mobileMenuOpen}
+						>
+							{mobileMenuOpen ? (
+								<X className="w-6 h-6 text-ink" />
+							) : (
+								<Menu className="w-6 h-6 text-ink" />
+							)}
 						</button>
 					</div>
 				</div>

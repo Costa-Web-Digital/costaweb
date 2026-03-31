@@ -33,7 +33,15 @@ const SECTION_ROUTES = {
 };
 ```
 
+O mapa inverso `ROUTE_TO_SECTION` (route → sectionId) é gerado automaticamente a partir de `SECTION_ROUTES` e exportado para uso em `App.jsx`.
+
 Se o `sectionId` não existir no mapa, navega para `/` (home).
+
+## Exportações
+
+- `useScrollTo` — hook de navegação (exportação nomeada)
+- `SECTION_ROUTES` — mapa sectionId → route
+- `ROUTE_TO_SECTION` — mapa route → sectionId
 
 ## Dependências
 

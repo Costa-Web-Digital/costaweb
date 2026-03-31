@@ -30,7 +30,7 @@ Variáveis CSS customizadas que definem o sistema de design do projeto, declarad
 
 | Variável | Valor | Uso |
 |---|---|---|
-| `--font-display` | `'Clash Display', sans-serif` | Headings (h1-h6) |
+| `--font-display` | `'Montserrat', sans-serif` | Headings (h1-h6) |
 | `--font-body` | `'DM Sans', sans-serif` | Texto corrido |
 
 ## Regras CSS Base

@@ -1,9 +1,8 @@
-import { memo } from 'react';
 import { ArrowRight, Database, Globe, Monitor, Search, TrendingUp } from 'lucide-react';
 import { useScrollTo } from '../hooks/useScrollTo';
 import { useInView } from '../hooks/useInView';
 
-const ServiceCard = memo(function ServiceCard({ service, index, isVisible, scrollTo }) {
+function ServiceCard({ service, index, isVisible, scrollTo }) {
 	return (
 		<div
 			className={`group glass rounded-2xl p-6 border border-glass-border card-hover transition-all duration-700 ${
@@ -32,7 +31,7 @@ const ServiceCard = memo(function ServiceCard({ service, index, isVisible, scrol
 			</button>
 		</div>
 	);
-});
+}
 
 const services = [
 	{
@@ -58,7 +57,7 @@ const services = [
 	{
 		icon: TrendingUp,
 		title: 'Tráfego Pago (ADS)',
-		description: 'Campanhas no Google Ads e Meta Ads com foco em ROI. investmento inteligente para resultados imediatos e mensuráveis.',
+		description: 'Campanhas no Google Ads e Meta Ads com foco em ROI. Investimento inteligente para resultados imediatos e mensuráveis.',
 	},
 ];
 
@@ -82,7 +81,7 @@ export default function Services() {
 						Nossos <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Serviços</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
-						Solutions complete para fazer seu negócio decolar no digital.
+						Soluções completas para fazer seu negócio decolar no digital.
 						Do design ao tráfego, cuidamos de tudo para você focar no que sabe fazer
 						melhor.
 					</p>

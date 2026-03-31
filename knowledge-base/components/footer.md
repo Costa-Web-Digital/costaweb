@@ -47,10 +47,6 @@ Itens configuráveis, todos apontam para seção `servicos`.
 
 Ver [component-patterns.md](../styling/component-patterns.md) para referências de estilos.
 
-## Known Issues
-
-- **Bug `scrollToSection`**: O componente chama `scrollToSection(link.id)` mas o hook `useScrollTo` retorna uma função chamada `scrollTo`. Os links rápidos e de serviços no footer podem apresentar erro de runtime (`scrollToSection is not defined`).
-
 ## Relacionamentos
 
 - [routing.md](../architecture/routing.md) — navegação

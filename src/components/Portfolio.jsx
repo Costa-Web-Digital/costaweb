@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
+import { useScrollTo } from '../hooks/useScrollTo';
 
 const projects = [
 	{
@@ -42,6 +43,7 @@ const projects = [
 
 export default function Portfolio() {
 	const [isVisible, sectionRef] = useInView();
+	const scrollTo = useScrollTo();
 
 	return (
 		<section
@@ -59,7 +61,7 @@ export default function Portfolio() {
 						Nosso <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">Portfólio</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
-						Projetos que мы сделали para empresas que decidiram crescer no digital.
+						Projetos que criamos para empresas que decidiram crescer no digital.
 						Cada projeto é único, mas todos têm algo em comum: resultados.
 					</p>
 				</div>
@@ -83,19 +85,19 @@ export default function Portfolio() {
 								</div>
 
 								<div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-									<a
-										href="#contato"
-										className="inline-flex items-center gap-2 glass px-4 py-2 rounded-xl text-white font-medium hover:bg-white/20 transition-colors"
+									<button
+										onClick={() => scrollTo('contato')}
+										className="inline-flex items-center gap-2 glass px-4 py-2 rounded-xl text-white font-medium hover:bg-white/20 transition-colors cursor-pointer border-0"
 									>
 										Ver projeto
 										<ExternalLink className="w-4 h-4" />
-									</a>
+									</button>
 								</div>
 							</div>
 
 							<div className="p-5">
-							<p className="text-xs text-muted mb-1">{project.category}</p>
-							<h3 className="text-lg font-semibold text-ink">
+								<p className="text-xs text-muted mb-1">{project.category}</p>
+								<h3 className="text-lg font-semibold text-ink">
 									{project.title}
 								</h3>
 							</div>
@@ -104,12 +106,12 @@ export default function Portfolio() {
 				</div>
 
 				<div className="text-center mt-10">
-					<a
-						href="#contato"
-						className="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity"
+					<button
+						onClick={() => scrollTo('contato')}
+						className="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
 					>
 						Ver todos os projetos
-					</a>
+					</button>
 				</div>
 			</div>
 		</section>

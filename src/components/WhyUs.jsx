@@ -5,7 +5,7 @@ const features = [
 	{
 		icon: Zap,
 		title: 'Entrega Rápida',
-		description: 'Seus projetos prontos em tempo recorde. Sem atrasos, semedoração. Compromisso com prazos.',
+		description: 'Seus projetos prontos em tempo recorde. Sem atrasos, sem dor de cabeça. Compromisso com prazos.',
 		stat: '7 dias',
 		statLabel: 'média de entrega',
 	},
@@ -19,9 +19,9 @@ const features = [
 	{
 		icon: TrendingUp,
 		title: 'Foco em Conversão',
-		description: 'Não fazemos sites apenas bonito. Fazemos máquinas de gerar leads e vendas.',
+		description: 'Não fazemos sites apenas bonitos. Fazemos máquinas de gerar leads e vendas.',
 		stat: '+50%',
-		statLabel: 'média de conversao',
+		statLabel: 'média de conversão',
 	},
 	{
 		icon: Shield,

@@ -28,19 +28,7 @@ O app usa `HashRouter` (rotas com `#`) em vez de `BrowserRouter`, compatível co
 
 ## Mapeamento de Seções
 
-Definido em `src/App.jsx` como `SECTION_ROUTES`:
-
-```js
-const SECTION_ROUTES = {
-	'/servicos': 'servicos',
-	'/porque-nos': 'porque-nos',
-	'/processo': 'processo',
-	'/faq': 'faq',
-	'/contato': 'contato',
-};
-```
-
-Duplicado em `src/hooks/useScrollTo.js` como `SECTION_ROUTES` (inverso: sectionId → route):
+Fonte única de verdade em `src/hooks/useScrollTo.js`:
 
 ```js
 const SECTION_ROUTES = {
@@ -51,6 +39,8 @@ const SECTION_ROUTES = {
 	contato: '/contato',
 };
 ```
+
+O mapa inverso (`ROUTE_TO_SECTION`) é gerado automaticamente e importado por `App.jsx` para o scroll de seções.
 
 ## Fluxo de Navegação
 
