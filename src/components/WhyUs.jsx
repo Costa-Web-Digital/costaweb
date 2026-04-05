@@ -11,10 +11,10 @@ const features = [
 	},
 	{
 		icon: Headphones,
-		title: 'Suporte Dedicado',
-		description: 'Time sempre disponível para tirar suas dúvidas e fazer ajustes pós-entrega.',
-		stat: '24/7',
-		statLabel: 'suporte disponível',
+		title: 'Suporte',
+		description: 'Time disponível para tirar suas dúvidas e fazer ajustes pós-entrega com agilidade.',
+		stat: '99,9%',
+		statLabel: 'de disponibilidade',
 	},
 	{
 		icon: TrendingUp,
@@ -43,9 +43,8 @@ export default function WhyUs() {
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div
-					className={`text-center mb-16 transition-all duration-700 ${
-						isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-					}`}
+					className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+						}`}
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold mb-4">
 						Por que escolher a <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">CostaWeb?</span>
@@ -60,9 +59,8 @@ export default function WhyUs() {
 					{features.map((feature, index) => (
 						<div
 							key={feature.title}
-							className={`text-center glass rounded-2xl p-6 border border-glass-border transition-all duration-700 ${
-								isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-							}`}
+							className={`text-center glass rounded-2xl p-6 border border-glass-border transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+								}`}
 							style={{ transitionDelay: `${index * 100}ms` }}
 						>
 							<div className="w-16 h-16 mx-auto bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-5">
