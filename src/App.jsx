@@ -35,7 +35,7 @@ function HomePage() {
 			<Services />
 			<WhyUs />
 			<Process />
-			<Testimonials />
+			{/*<Testimonials />*/}
 			<FAQ />
 			<FinalCTA />
 		</main>

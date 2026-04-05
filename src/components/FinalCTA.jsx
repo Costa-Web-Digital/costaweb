@@ -18,7 +18,7 @@ export default function FinalCTA() {
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div
 					className={`text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-					}`}
+						}`}
 				>
 					<h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">
 						Pronto para crescer online?
@@ -39,6 +39,7 @@ export default function FinalCTA() {
 							<MessageCircle className="w-5 h-5" />
 							Entre em contato agora
 						</a>
+						{/*
 						<button
 							onClick={() => scrollTo('servicos')}
 							className="inline-flex items-center gap-2 glass-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all border border-white/10 cursor-pointer"
@@ -46,6 +47,7 @@ export default function FinalCTA() {
 							Ver serviços
 							<ArrowRight className="w-5 h-5" />
 						</button>
+						*/}
 					</div>
 				</div>
 			</div>

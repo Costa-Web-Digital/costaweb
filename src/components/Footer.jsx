@@ -37,6 +37,7 @@ export default function Footer() {
 							Agência digital completa. Transformamos negócios através de soluções
 							digitais que geram resultados reais.
 						</p>
+						{/*
 						<div className="flex gap-3">
 							<a
 								href="#"
@@ -91,6 +92,7 @@ export default function Footer() {
 								</svg>
 							</a>
 						</div>
+						*/}
 					</div>
 
 					<div>
@@ -109,7 +111,9 @@ export default function Footer() {
 						</ul>
 					</div>
 
+
 					<div>
+						{/*
 						<h3 className="font-semibold text-ink mb-4">Serviços</h3>
 						<ul className="space-y-3">
 							{services.map((link) => (
@@ -123,6 +127,7 @@ export default function Footer() {
 								</li>
 							))}
 						</ul>
+						*/}
 					</div>
 
 					<div>
