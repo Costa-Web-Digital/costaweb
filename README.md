@@ -129,10 +129,6 @@ O script executa `vite build` e envia o conteúdo de `dist/` para a branch `gh-p
 
 ## Licença
 
+Este projeto está sob a licença [MIT](LICENSE).
+
 ---
-
-## Atualizações
-
-- **v1.1.1**: Teste de integração de notificações via Telegram.
-- **v1.1.2**: Corrigido bug de navegação nos links do rodapé.
-- **v1.1.3**: Ocultado componentes não utilizados e atualização do `.gitignore`.
