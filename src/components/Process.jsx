@@ -82,7 +82,7 @@ export default function Process() {
 								</div>
 
 								{index < steps.length - 1 && (
-									<div className="hidden lg:flex absolute top-10 left-[calc(50%+40px)] right-[calc(-50%+40px)] h-1">
+									<div className="hidden lg:flex absolute top-10 left-[calc(50%+40px)] right-[calc(-50%+8px)] h-1">
 										<div className="flex-1 border-t-2 border-dashed border-border" />
 									</div>
 								)}
