@@ -1,6 +1,6 @@
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useInView } from '../hooks/useInView';
-import { useScrollTo } from '../hooks/useScrollTo';
 
 const projects = [
 	{
@@ -43,7 +43,6 @@ const projects = [
 
 export default function Portfolio() {
 	const [isVisible, sectionRef] = useInView();
-	const scrollTo = useScrollTo();
 
 	return (
 		<section
@@ -85,13 +84,13 @@ export default function Portfolio() {
 								</div>
 
 								<div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-									<button
-										onClick={() => scrollTo('contato')}
-										className="inline-flex items-center gap-2 glass px-4 py-2 rounded-xl text-white font-medium hover:bg-white/20 transition-colors cursor-pointer border-0"
+									<Link
+										to="/contato"
+										className="inline-flex items-center gap-2 glass px-4 py-2 rounded-xl text-white font-medium hover:bg-white/20 transition-colors"
 									>
 										Ver projeto
 										<ExternalLink className="w-4 h-4" />
-									</button>
+									</Link>
 								</div>
 							</div>
 
@@ -106,12 +105,12 @@ export default function Portfolio() {
 				</div>
 
 				<div className="text-center mt-10">
-					<button
-						onClick={() => scrollTo('contato')}
-						className="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
+					<Link
+						to="/contato"
+						className="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity"
 					>
 						Ver todos os projetos
-					</button>
+					</Link>
 				</div>
 			</div>
 		</section>
