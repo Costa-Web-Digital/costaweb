@@ -6,29 +6,29 @@ const features = [
 		icon: Zap,
 		title: 'Entrega Rápida',
 		description: 'Seus projetos prontos em tempo recorde. Sem atrasos, sem dor de cabeça. Compromisso com prazos.',
-		stat: '7 dias',
-		statLabel: 'média de entrega',
+		// stat: '7 dias',
+		// statLabel: 'média de entrega',
 	},
 	{
 		icon: Headphones,
 		title: 'Suporte',
 		description: 'Time disponível para tirar suas dúvidas e fazer ajustes pós-entrega com agilidade.',
-		stat: '99,9%',
-		statLabel: 'de disponibilidade',
+		// stat: '99,9%',
+		// statLabel: 'de disponibilidade',
 	},
 	{
 		icon: TrendingUp,
 		title: 'Foco em Conversão',
 		description: 'Não fazemos sites apenas bonitos. Fazemos máquinas de gerar leads e vendas.',
-		stat: '+50%',
-		statLabel: 'média de conversão',
+		// stat: '+50%',
+		// statLabel: 'média de conversão',
 	},
 	{
 		icon: Shield,
 		title: 'Transparência Total',
 		description: 'Sem letras miúdas. Você sabe exatamente o que está contratando e quanto vai pagar.',
-		stat: '100%',
-		statLabel: 'transparente',
+		// stat: '100%',
+		// statLabel: 'transparente',
 	},
 ];
 
@@ -50,8 +50,8 @@ export default function WhyUs() {
 						Por que escolher a <span className="bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">CostaWeb?</span>
 					</h2>
 					<p className="text-muted max-w-2xl mx-auto">
-						Diferenciais que fazem toda a diferença no seu projeto.
-						Experiência e compromisso com resultados em cada detalhe.
+						Funcionalidades que fazem toda a diferença no seu projeto.
+						Temos experiência com resultados e compromisso em cada detalhe.
 					</p>
 				</div>
 
@@ -75,10 +75,12 @@ export default function WhyUs() {
 								{feature.description}
 							</p>
 
-							<div className="pt-4 border-t border-border">
-								<p className="text-3xl font-bold bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">{feature.stat}</p>
-								<p className="text-xs text-muted">{feature.statLabel}</p>
-							</div>
+							{feature.stat && (
+								<div className="pt-4 border-t border-border">
+									<p className="text-3xl font-bold bg-gradient-to-br from-secondary to-tertiary text-transparent bg-clip-text">{feature.stat}</p>
+									<p className="text-xs text-muted">{feature.statLabel}</p>
+								</div>
+							)}
 						</div>
 					))}
 				</div>
