@@ -37,27 +37,27 @@ const services = [
 	{
 		icon: Monitor,
 		title: 'Landing Pages',
-		description: 'Páginas de alta conversão focadas em capturar leads e vender. Design atrativo e copy persuasivo para maximizar seus resultados.',
+		description: 'Páginas focadas em capturar leads e vender seu serviço ou produto. Trabalhamos com designs atrativos e copy persuasivo para maximizar os seus resultados.',
 	},
 	{
 		icon: Globe,
 		title: 'Sites Estáticos',
-		description: 'Sites rápidos, seguros e elegantes para presença profissional. Ideal para quem precisa de uma cartão de visitas digital de alto impacto.',
+		description: 'Sites rápidos, seguros e elegantes para presença profissional. Ideal para quem precisa de uma cartão de visitas digital sem gastar todo o orçamento do marketing.',
 	},
 	{
 		icon: Database,
 		title: 'Sites Dinâmicos',
-		description: 'Sistemas com CMS, blog, e-commerce e painel administrativo. Controle total do seu conteúdo com facilidade e flexibilidade.',
+		description: 'Desenvolvemos uma vasta gama de sistemas com CMS, blogs, e-commerces e painéis administrativos. Tenha controle total do seu conteúdo e atualize o seu site sem depender de ninguém.',
 	},
 	{
 		icon: Search,
 		title: 'Tráfego Orgânico (SEO)',
-		description: 'Ranqueamento no Google, criação de conteúdo e autoridade de domínio. Deixe que clientes te encontrem organicamente.',
+		description: 'Melhoramos seu ranking no Google com nossa criação de conteúdo especializada. Faça com que os clientes te encontrem organicamente.',
 	},
 	{
 		icon: TrendingUp,
-		title: 'Tráfego Pago (ADS)',
-		description: 'Campanhas no Google Ads e Meta Ads com foco em ROI. Investimento inteligente para resultados imediatos e mensuráveis.',
+		title: 'Tráfego Pago (Ads)',
+		description: 'Criamos campanhas no Google Ads e Meta Ads com foco em ROI. Fazemos relatórios com as métricas mais importantes e explicamos como cada uma delas influencia o seu desempenho online.',
 	},
 ];
 
