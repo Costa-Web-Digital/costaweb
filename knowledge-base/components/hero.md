@@ -18,7 +18,7 @@ Hero/
 ├── Background.jsx    # Efeitos de fundo decorativos
 ├── Title.jsx         # Título principal h1
 ├── Tagline.jsx       # Parágrafo de descrição
-├── CTA.jsx           # Botão de ação
+├── CTA.jsx           # Link de ação
 ├── Highlights.jsx    # Estatísticas numéricas
 └── DesignMock.jsx    # Mockup visual de site
 ```
@@ -48,9 +48,10 @@ Hero/
 
 ### CTA
 
-- Botão de ação principal com ícone `ArrowRight`
-- Usa `useScrollTo('contato')` para navegação ao contato
+- Link de ação principal com ícone `ArrowRight`
+- Usa `<Link to="/contato">` do react-router
 - Classes `bg-gradient-to-br from-primary to-secondary`
+- Navegação nativa com scroll suave via CSS
 
 ### Highlights
 
@@ -64,8 +65,14 @@ Hero/
 - Badges flutuantes ilustrativos
 - Usa `glass` e `bg-gradient-to-br from-primary to-secondary`
 
+## Dependências
+
+- `react-router-dom` — `Link` para navegação
+- `lucide-react` — ícones
+- `../hooks/useInView` — animação de entrada
+
 ## Relacionamentos
 
 - [use-in-view.md](../hooks/use-in-view.md) — hook de visibilidade
-- [use-scroll-to.md](../hooks/use-scroll-to.md) — hook de navegação
+- [routing.md](../architecture/routing.md) — sistema de navegação
 - [design-tokens.md](../styling/design-tokens.md) — variáveis CSS

@@ -2,12 +2,11 @@
 
 ## Descrição
 
-Sistema de navegação client-side usando HashRouter do React Router v7, com suporte a navegação por seções na página principal.
+Sistema de navegação client-side usando HashRouter do React Router v7, com suporte a navegação por seções na página principal via CSS scroll-behavior.
 
 ## Localização
 
 - Configuração de rotas: `src/App.jsx`
-- Hook de navegação: `src/hooks/useScrollTo.js`
 
 ## Configuração
 
@@ -15,51 +14,51 @@ O app usa `HashRouter` (rotas com `#`) em vez de `BrowserRouter`, compatível co
 
 ## Rotas
 
-| Rota | Componente | Comportamento |
+| Rota | Componente | Descrição |
 |---|---|---|
 | `/` | `HomePage` | Página principal completa |
-| `/servicos` | `HomePage` | Scroll para seção `servicos` |
-| `/porque-nos` | `HomePage` | Scroll para seção `porque-nos` |
-| `/processo` | `HomePage` | Scroll para seção `processo` |
-| `/faq` | `HomePage` | Scroll para seção `faq` |
-| `/contato` | `HomePage` | Scroll para seção `contato` |
+| `/servicos` | `HomePage` | Seção serviços com scroll automático |
+| `/porque-nos` | `HomePage` | Seção por que nós com scroll automático |
+| `/processo` | `HomePage` | Seção processo com scroll automático |
+| `/faq` | `HomePage` | Seção FAQ com scroll automático |
+| `/contato` | `HomePage` | Seção contato com scroll automático |
 | `/politica-de-privacidade` | `PrivacyPolicy` | Página dedicada |
 | `/termos-de-uso` | `TermsOfUse` | Página dedicada |
 
-## Mapeamento de Seções
+## Navegação por Seções
 
-Fonte única de verdade em `src/hooks/useScrollTo.js`:
+O scroll entre seções é feito automaticamente pelo navegador via CSS:
 
-```js
-const SECTION_ROUTES = {
-	servicos: '/servicos',
-	'porque-nos': '/porque-nos',
-	processo: '/processo',
-	faq: '/faq',
-	contato: '/contato',
-};
+```css
+html {
+	scroll-behavior: smooth;
+}
 ```
 
-O mapa inverso (`ROUTE_TO_SECTION`) é gerado automaticamente e importado por `App.jsx` para o scroll de seções.
+Cada seção da página principal tem um elemento com `id` correspondente à rota:
+- `/servicos` → `<section id="servicos">`
+- `/porque-nos` → `<section id="porque-nos">`
+- `/processo` → `<section id="processo">`
+- `/faq` → `<section id="faq">`
+- `/contato` → `<section id="contato">`
 
 ## Fluxo de Navegação
 
-1. Usuário clica em link do Header/Footer → `useScrollTo('sectionId')` → `navigate('/route')`
-2. `HomePage` detecta mudança de `pathname` via `useLocation()`
-3. `useEffect` faz scroll suave para o elemento com `id` correspondente
-4. Delay de 100ms garante que o DOM esteja pronto antes do scroll
+1. Usuário clica em link do Header/Footer → `<Link to="/rota">`
+2. React Router muda a URL
+3. Browser detecta hash change e faz scroll suave para o elemento com id correspondente
+4. CSS `scroll-behavior: smooth` garante animação nativa
 
 ## Componentes Relacionados
 
-- **Header** — links de navegação + CTA principal
-- **Footer** — links rápidos e de serviços
-- **Hero/CTA** — botão principal → `contato`
-- **Services** — cada card tem botão de ação → `contato`
-- **FinalCTA** — botão secundário → `servicos`
+- **Header** — links de navegação usando `<Link>`
+- **Footer** — links rápidos usando `<Link>`
+- **Hero/CTA** — link principal usando `<Link to="/contato">`
+- **Services** — cards com link para contato usando `<Link>`
+- **Portfolio** — botões de projeto usando `<Link>`
 
 ## Relacionamentos
 
 - [entry-points.md](entry-points.md) — estrutura do App.jsx
-- [use-scroll-to.md](../hooks/use-scroll-to.md) — hook de navegação
 - [header.md](../components/header.md) — componente Header
 - [footer.md](../components/footer.md) — componente Footer
