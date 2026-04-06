@@ -1,10 +1,8 @@
-import { ArrowRight, MessageCircle } from 'lucide-react';
-import { useScrollTo } from '../hooks/useScrollTo';
+import { MessageCircle } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
 export default function FinalCTA() {
 	const [isVisible, sectionRef] = useInView();
-	const scrollTo = useScrollTo();
 
 	return (
 		<section
@@ -13,7 +11,7 @@ export default function FinalCTA() {
 			className="py-20 relative overflow-hidden"
 		>
 			<div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary" />
-			<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyQ3VzdG9tSW5wdXQiPjxwYXRoIGQ9Ik0zNiAxOGMtMS4xIDAtMiAuOS0yIDJzLjkgMiAyIDIgMi0uOSAyLTItLjktMi0yLTJzLS45LTItMi0yeiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
+			<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTM2IDE4Yy0xLjEgMC0yIC45LTIgMnMuOSAyIDIgMiAyLS45IDItMi0uOS0yLTItMnMtLjktMi0yLTJ6IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30" />
 
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<div
@@ -39,15 +37,6 @@ export default function FinalCTA() {
 							<MessageCircle className="w-5 h-5" />
 							Entre em contato agora
 						</a>
-						{/*
-						<button
-							onClick={() => scrollTo('servicos')}
-							className="inline-flex items-center gap-2 glass-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition-all border border-white/10 cursor-pointer"
-						>
-							Ver serviços
-							<ArrowRight className="w-5 h-5" />
-						</button>
-						*/}
 					</div>
 				</div>
 			</div>
