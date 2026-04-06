@@ -1,19 +1,17 @@
 import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Menu, X } from 'lucide-react';
-import { useScrollTo } from '../hooks/useScrollTo';
 
 const NAV_LINKS = [
-	{ label: 'Serviços', id: 'servicos' },
-	{ label: 'Por que nós', id: 'porque-nos' },
-	{ label: 'Processo', id: 'processo' },
-	{ label: 'FAQ', id: 'faq' },
+	{ label: 'Serviços', to: '/servicos' },
+	{ label: 'Por que nós', to: '/porque-nos' },
+	{ label: 'Processo', to: '/processo' },
+	{ label: 'FAQ', to: '/faq' },
 ];
 
 export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-	const scrollTo = useScrollTo();
 
 	const handleScroll = useCallback(() => {
 		setIsScrolled(window.scrollY > 50);
@@ -24,23 +22,9 @@ export default function Header() {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, [handleScroll]);
 
-	const handleNavClick = useCallback((id) => {
-		scrollTo(id);
-	}, [scrollTo]);
-
-	const handleContactClick = useCallback(() => {
-		scrollTo('contato');
-	}, [scrollTo]);
-
-	const handleMobileContactClick = useCallback(() => {
-		scrollTo('contato');
+	const closeMobileMenu = useCallback(() => {
 		setMobileMenuOpen(false);
-	}, [scrollTo]);
-
-	const handleMobileNavClick = useCallback((id) => {
-		scrollTo(id);
-		setMobileMenuOpen(false);
-	}, [scrollTo]);
+	}, []);
 
 	return (
 		<header
@@ -59,26 +43,26 @@ export default function Header() {
 						</span>
 					</Link>
 
-					<nav className="hidden md:flex items-center gap-8">
-						{NAV_LINKS.map((link) => (
-							<button
-								key={link.id}
-								onClick={() => handleNavClick(link.id)}
-								className="text-ink-alt hover:text-primary transition-colors font-medium cursor-pointer bg-transparent border-0 p-0"
-							>
-								{link.label}
-							</button>
-						))}
-					</nav>
-
-					<div className="flex items-center gap-3">
-						<button
-							onClick={handleContactClick}
-							className="hidden md:flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity cursor-pointer border-0"
+				<nav className="hidden md:flex items-center gap-8">
+					{NAV_LINKS.map((link) => (
+						<Link
+							key={link.to}
+							to={link.to}
+							className="text-ink-alt hover:text-primary transition-colors font-medium"
 						>
-							Entre em contato agora
-							<ArrowRight className="w-4 h-4" />
-						</button>
+							{link.label}
+						</Link>
+					))}
+				</nav>
+
+				<div className="flex items-center gap-3">
+					<Link
+						to="/contato"
+						className="hidden md:flex items-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-90 transition-opacity"
+					>
+						Entre em contato agora
+						<ArrowRight className="w-4 h-4" />
+					</Link>
 
 						<button
 							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -99,21 +83,23 @@ export default function Header() {
 					<div className="md:hidden mt-4 glass rounded-2xl p-4">
 						<nav className="flex flex-col gap-4">
 							{NAV_LINKS.map((link) => (
-								<button
-									key={link.id}
-									onClick={() => handleMobileNavClick(link.id)}
-									className="text-left text-ink-alt hover:text-primary transition-colors font-medium py-2 cursor-pointer bg-transparent border-0 w-full"
+								<Link
+									key={link.to}
+									to={link.to}
+									onClick={closeMobileMenu}
+									className="text-left text-ink-alt hover:text-primary transition-colors font-medium py-2 w-full"
 								>
 									{link.label}
-								</button>
+								</Link>
 							))}
-							<button
-								onClick={handleMobileContactClick}
-								className="flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-3 rounded-xl font-semibold cursor-pointer border-0 w-full"
+							<Link
+								to="/contato"
+								onClick={closeMobileMenu}
+								className="flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-3 rounded-xl font-semibold w-full"
 							>
 								Entre em contato agora
 								<ArrowRight className="w-4 h-4" />
-							</button>
+							</Link>
 						</nav>
 					</div>
 				)}
