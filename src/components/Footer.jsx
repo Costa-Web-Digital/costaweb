@@ -24,8 +24,7 @@ export default function Footer() {
 							</span>
 						</Link>
 						<p className="text-muted text-sm">
-							Agência digital completa. Transformamos negócios através de soluções
-							digitais que geram resultados reais.
+							Transformando ideias em realidade digital
 						</p>
 					</div>
 
