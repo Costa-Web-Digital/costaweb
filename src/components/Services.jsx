@@ -1,8 +1,8 @@
 import { ArrowRight, Database, Globe, Monitor, Search, TrendingUp } from 'lucide-react';
-import { useScrollTo } from '../hooks/useScrollTo';
+import { Link } from 'react-router-dom';
 import { useInView } from '../hooks/useInView';
 
-function ServiceCard({ service, index, isVisible, scrollTo }) {
+function ServiceCard({ service, index, isVisible }) {
 	return (
 		<div
 			className={`group glass rounded-2xl p-6 border border-glass-border card-hover transition-all duration-700 ${
@@ -22,13 +22,13 @@ function ServiceCard({ service, index, isVisible, scrollTo }) {
 				{service.description}
 			</p>
 
-			<button
-				onClick={() => scrollTo('contato')}
-				className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all cursor-pointer bg-transparent border-0 p-0"
+			<Link
+				to="/contato"
+				className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
 			>
 				Saber mais
 				<ArrowRight className="w-4 h-4" />
-			</button>
+			</Link>
 		</div>
 	);
 }
@@ -63,7 +63,6 @@ const services = [
 
 export default function Services() {
 	const [isVisible, sectionRef] = useInView();
-	const scrollTo = useScrollTo();
 
 	return (
 		<section
@@ -94,7 +93,6 @@ export default function Services() {
 							service={service}
 							index={index}
 							isVisible={isVisible}
-							scrollTo={scrollTo}
 						/>
 					))}
 				</div>
