@@ -1,41 +1,22 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero.jsx';
 import Services from './components/Services';
 import WhyUs from './components/WhyUs';
 import Process from './components/Process';
-import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
-import { SECTION_ROUTES, ROUTE_TO_SECTION } from './hooks/useScrollTo';
 
 function HomePage() {
-	const { pathname } = useLocation();
-
-	useEffect(() => {
-		const sectionId = ROUTE_TO_SECTION[pathname];
-		if (sectionId) {
-			// Small delay to ensure DOM is ready
-			const timer = setTimeout(() => {
-				document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-			}, 100);
-			return () => clearTimeout(timer);
-		} else {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-		}
-	}, [pathname]);
-
 	return (
 		<main>
 			<Hero />
 			<Services />
 			<WhyUs />
 			<Process />
-			{/*<Testimonials />*/}
 			<FAQ />
 			<FinalCTA />
 		</main>
