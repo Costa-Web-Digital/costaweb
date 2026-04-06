@@ -1,4 +1,5 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero.jsx';
 import Services from './components/Services';
@@ -9,6 +10,33 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
+
+// Map routes to section IDs
+const ROUTE_TO_SECTION = {
+	'/servicos': 'servicos',
+	'/porque-nos': 'porque-nos',
+	'/processo': 'processo',
+	'/faq': 'faq',
+	'/contato': 'contato',
+};
+
+function ScrollToSection() {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		const sectionId = ROUTE_TO_SECTION[pathname];
+		if (sectionId) {
+			const timer = setTimeout(() => {
+				document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+			}, 100);
+			return () => clearTimeout(timer);
+		} else if (pathname === '/') {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+	}, [pathname]);
+
+	return null;
+}
 
 function HomePage() {
 	return (
@@ -26,6 +54,7 @@ function HomePage() {
 function App() {
 	return (
 		<HashRouter>
+			<ScrollToSection />
 			<div className="min-h-screen bg-surface">
 				<Header />
 				<Routes>
