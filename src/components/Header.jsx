@@ -34,13 +34,8 @@ export default function Header() {
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between">
-					<Link to="/" className="flex items-center gap-2">
-						<div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-							<span className="text-white font-bold text-xl font-display">C</span>
-						</div>
-						<span className="text-xl font-bold font-display text-ink">
-							CostaWeb
-						</span>
+					<Link to="/">
+						<img src="/logo-header.png" alt="CostaWeb" className="h-6 w-auto" />
 					</Link>
 
 				<nav className="hidden md:flex items-center gap-8">
