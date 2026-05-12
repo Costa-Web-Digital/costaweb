@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero.jsx';
 import Services from './components/Services';
@@ -8,8 +8,9 @@ import Process from './components/Process';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfUse from './pages/TermsOfUse';
+
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfUse = lazy(() => import('./pages/TermsOfUse'));
 
 // Map routes to section IDs
 const ROUTE_TO_SECTION = {
@@ -55,16 +56,18 @@ function AppLayout() {
   return (
     <div className="min-h-screen bg-surface">
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/servicos" element={<HomePage />} />
-        <Route path="/porque-nos" element={<HomePage />} />
-        <Route path="/processo" element={<HomePage />} />
-        <Route path="/faq" element={<HomePage />} />
-        <Route path="/contato" element={<HomePage />} />
-        <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
-        <Route path="/termos-de-uso" element={<TermsOfUse />} />
-      </Routes>
+      <Suspense fallback={<div className="min-h-screen bg-surface" />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/servicos" element={<HomePage />} />
+          <Route path="/porque-nos" element={<HomePage />} />
+          <Route path="/processo" element={<HomePage />} />
+          <Route path="/faq" element={<HomePage />} />
+          <Route path="/contato" element={<HomePage />} />
+          <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
+          <Route path="/termos-de-uso" element={<TermsOfUse />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </div>
   );
