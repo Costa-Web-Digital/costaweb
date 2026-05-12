@@ -17,6 +17,11 @@
 		property="og:description"
 	/>
 	<meta content="/og-image.png" property="og:image" />
+	<meta content="1200" property="og:image:width" />
+	<meta content="630" property="og:image:height" />
+	<meta content="CostaWeb logo" property="og:image:alt" />
+	<meta content="pt_BR" property="og:locale" />
+	<meta content="CostaWeb" property="og:site_name" />
 
 	<meta content="summary_large_image" property="twitter:card" />
 	<meta content="https://costaweb.com.br/landing" property="twitter:url" />
@@ -26,8 +31,35 @@
 		property="twitter:description"
 	/>
 	<meta content="/og-image.png" property="twitter:image" />
+	<meta content="CostaWeb logo" property="twitter:image:alt" />
 
 	<title>CostaWeb — Links</title>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "CostaWeb — Links",
+			"description": "Encontre todos os canais de contato da CostaWeb em um só lugar.",
+			"url": "https://costaweb.com.br/landing",
+			"mainEntity": {
+				"@type": "Organization",
+				"name": "CostaWeb",
+				"url": "https://costaweb.com.br",
+				"description": "Agência digital especializada em desenvolvimento web, UI/UX e marketing digital.",
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+55-11-99963-9567",
+					"contactType": "sales",
+					"email": "contato@costaweb.com.br"
+				},
+				"sameAs": [
+					"https://instagram.com/costaweb.com.br",
+					"https://linkedin.com/company/costaweb"
+				]
+			}
+		}
+	</script>
 
 	<link href="https://fonts.googleapis.com" rel="preconnect" />
 	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
