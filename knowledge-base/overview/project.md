@@ -39,11 +39,11 @@ Repositório: `costaweb/` (raiz do projeto)
 
 ## Páginas Secundárias
 
-| Rota | Componente |
-|---|---|
-| `/landing` | `LandingPage` |
-| `/politica-de-privacidade` | `PrivacyPolicy` |
-| `/termos-de-uso` | `TermsOfUse` |
+| Rota | Componente | Tipo |
+|---|---|---|
+| `/landing` | `LandingPage` | Entry point independente (sem HashRouter) |
+| `/politica-de-privacidade` | `PrivacyPolicy` | Rota do HashRouter |
+| `/termos-de-uso` | `TermsOfUse` | Rota do HashRouter |
 
 ## Relacionamentos
 

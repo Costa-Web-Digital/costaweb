@@ -22,9 +22,10 @@ O app usa `HashRouter` (rotas com `#`) em vez de `BrowserRouter`, compatível co
 | `/processo` | `HomePage` | Seção processo com scroll automático |
 | `/faq` | `HomePage` | Seção FAQ com scroll automático |
 | `/contato` | `HomePage` | Seção contato com scroll automático |
-| `/landing` | `LandingPage` | Página LinkTree (sem Header/Footer) |
 | `/politica-de-privacidade` | `PrivacyPolicy` | Página dedicada |
 | `/termos-de-uso` | `TermsOfUse` | Página dedicada |
+
+**Nota**: `/landing` não é uma rota do HashRouter — é um entry point independente com HTML próprio (`landing/index.html`). Ver [landing-page.md](../pages/landing-page.md).
 
 ## Navegação por Seções
 
@@ -50,11 +51,7 @@ Cada seção da página principal tem um elemento com `id` correspondente à rot
 3. Browser detecta hash change e faz scroll suave para o elemento com id correspondente
 4. CSS `scroll-behavior: smooth` garante animação nativa
 
-## Layout Condicional
-
-Rotas definidas em `NO_LAYOUT_ROUTES` (array em `App.jsx`) não renderizam Header e Footer. O componente `AppLayout` verifica o pathname atual para decidir se exibe o layout completo.
-
-## Componentes Relacionados
+## Relacionamentos
 
 - **Header** — links de navegação usando `<Link>`
 - **Footer** — links rápidos usando `<Link>`

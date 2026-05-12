@@ -38,14 +38,18 @@ costaweb/
 │   ├── hooks/                 # Hooks customizados React
 │   │   ├── useScrollTo.js     # Navegação entre seções via rota
 │   │   └── useInView.js       # IntersectionObserver para animações
-│   ├── pages/                 # Páginas completas (rotas distintas)
-│   │   ├── PrivacyPolicy.jsx
-│   │   └── TermsOfUse.jsx
-│   ├── App.jsx                # Componente raiz e configuração de rotas
-│   ├── index.css              # Estilos globais e tokens CSS
-│   └── main.jsx               # Entry point da aplicação React
-├── index.html                 # HTML base com meta tags e fontes
-├── vite.config.js             # Configuração do Vite
+│ ├── pages/ # Páginas completas (rotas distintas)
+│ │ ├── LandingPage.jsx # Landing page LinkTree (standalone)
+│ │ ├── PrivacyPolicy.jsx
+│ │ └── TermsOfUse.jsx
+│ ├── App.jsx # Componente raiz e configuração de rotas
+│ ├── index.css # Estilos globais e tokens CSS
+│ ├── main.jsx # Entry point da aplicação React
+│ └── landing.jsx # Entry point da landing page standalone
+├── index.html # HTML base com meta tags e fontes
+├── landing/ # Landing page standalone
+│ └── index.html # HTML da landing page com meta tags próprias
+├── vite.config.js # Configuração do Vite
 ├── eslint.config.js           # Configuração do ESLint
 └── package.json
 ```

@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { MessageCircle, Mail, Globe, ArrowRight } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
@@ -8,19 +7,16 @@ const LINKS = [
 		label: 'WhatsApp',
 		href: 'https://wa.me/5511999639567',
 		icon: MessageCircle,
-		external: true,
 	},
 	{
 		label: 'E-mail',
 		href: 'mailto:contato@costaweb.com.br',
 		icon: Mail,
-		external: true,
 	},
 	{
 		label: 'Site principal',
 		href: '/',
 		icon: Globe,
-		external: false,
 	},
 ];
 
@@ -62,14 +58,12 @@ const SOCIAL_ICONS = {
 
 function LinkButton({ link, index, isVisible }) {
 	const Icon = link.icon;
-	const Wrapper = link.external ? 'a' : Link;
-	const wrapperProps = link.external
-		? { href: link.href, target: '_blank', rel: 'noopener noreferrer' }
-		: { to: link.href };
 
 	return (
-		<Wrapper
-			{...wrapperProps}
+		<a
+			href={link.href}
+			target={link.href.startsWith('http') || link.href.startsWith('mailto') ? '_blank' : undefined}
+			rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
 			className={`glass rounded-2xl p-4 card-hover flex items-center gap-4 w-full transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
 			style={{ transitionDelay: `${(index + 1) * 100}ms` }}
 		>
@@ -80,7 +74,7 @@ function LinkButton({ link, index, isVisible }) {
 				{link.label}
 			</span>
 			<ArrowRight className="w-4 h-4 text-muted shrink-0" />
-		</Wrapper>
+		</a>
 	);
 }
 
