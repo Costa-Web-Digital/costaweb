@@ -116,7 +116,7 @@ export default function LandingPage() {
 				<div
 					className={`flex flex-col items-center gap-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
 				>
-					<img src="/public/icone-quadrado-360.png" alt="CostaWeb Logo" className="w-20 h-20" />
+					<img src="/icone-quadrado-360.png" alt="CostaWeb Logo" className="w-20 h-20" />
 					<h1 className="text-2xl font-bold font-display text-ink">
 						CostaWeb
 					</h1>
