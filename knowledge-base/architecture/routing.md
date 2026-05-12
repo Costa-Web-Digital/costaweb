@@ -22,6 +22,7 @@ O app usa `HashRouter` (rotas com `#`) em vez de `BrowserRouter`, compatível co
 | `/processo` | `HomePage` | Seção processo com scroll automático |
 | `/faq` | `HomePage` | Seção FAQ com scroll automático |
 | `/contato` | `HomePage` | Seção contato com scroll automático |
+| `/landing` | `LandingPage` | Página LinkTree (sem Header/Footer) |
 | `/politica-de-privacidade` | `PrivacyPolicy` | Página dedicada |
 | `/termos-de-uso` | `TermsOfUse` | Página dedicada |
 
@@ -48,6 +49,10 @@ Cada seção da página principal tem um elemento com `id` correspondente à rot
 2. React Router muda a URL
 3. Browser detecta hash change e faz scroll suave para o elemento com id correspondente
 4. CSS `scroll-behavior: smooth` garante animação nativa
+
+## Layout Condicional
+
+Rotas definidas em `NO_LAYOUT_ROUTES` (array em `App.jsx`) não renderizam Header e Footer. O componente `AppLayout` verifica o pathname atual para decidir se exibe o layout completo.
 
 ## Componentes Relacionados
 

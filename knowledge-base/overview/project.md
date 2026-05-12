@@ -41,6 +41,7 @@ Repositório: `costaweb/` (raiz do projeto)
 
 | Rota | Componente |
 |---|---|
+| `/landing` | `LandingPage` |
 | `/politica-de-privacidade` | `PrivacyPolicy` |
 | `/termos-de-uso` | `TermsOfUse` |
 
