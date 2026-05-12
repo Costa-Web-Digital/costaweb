@@ -104,7 +104,7 @@ export default function LandingPage() {
 	}, []);
 
 	return (
-		<section className="min-h-screen bg-surface-alt relative overflow-hidden flex items-center justify-center">
+		<main className="min-h-screen bg-surface-alt relative overflow-hidden flex items-center justify-center">
 			<div className="absolute top-0 left-0 w-72 h-72 bg-primary opacity-10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
 			<div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary opacity-10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
 			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent opacity-5 rounded-full blur-3xl" />
@@ -114,9 +114,16 @@ export default function LandingPage() {
 				className="relative z-10 w-full max-w-sm mx-auto px-6 py-16 flex flex-col items-center gap-8"
 			>
 				<div
-					className={`flex flex-col items-center gap-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+					className="flex flex-col items-center gap-4"
 				>
-					<img src="/icone-quadrado-360.png" alt="CostaWeb Logo" className="w-20 h-20" />
+					<img
+						src="/icone-quadrado-360.png"
+						alt="CostaWeb Logo"
+						className="w-20 h-20"
+						width="80"
+						height="80"
+						fetchpriority="high"
+					/>
 					<h1 className="text-2xl font-bold font-display text-ink">
 						CostaWeb
 					</h1>
@@ -153,12 +160,11 @@ export default function LandingPage() {
 				</div>
 
 				<p
-					className={`text-muted text-xs mt-8 transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-					style={{ transitionDelay: `${(LINKS.length + SOCIALS.length + 2) * 100}ms` }}
+					className="text-muted text-xs mt-8"
 				>
 					© {new Date().getFullYear()} CostaWeb
 				</p>
 			</div>
-		</section>
+		</main>
 	);
 }

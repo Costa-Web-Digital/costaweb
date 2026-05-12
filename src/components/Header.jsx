@@ -14,7 +14,8 @@ export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	const handleScroll = useCallback(() => {
-		setIsScrolled(window.scrollY > 50);
+		const scrolled = window.scrollY > 50;
+		setIsScrolled((prev) => (prev !== scrolled ? scrolled : prev));
 	}, []);
 
 	useEffect(() => {
@@ -35,7 +36,15 @@ export default function Header() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between">
 					<Link to="/">
-						<img src="/logo-header.svg" alt="CostaWeb" className="h-6 w-auto" />
+						<img
+							src="/logo-header.svg"
+							alt="CostaWeb"
+							className="h-6 w-auto"
+							width="158"
+							height="24"
+							fetchpriority="high"
+							decoding="async"
+						/>
 					</Link>
 
 				<nav className="hidden md:flex items-center gap-8">
