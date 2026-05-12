@@ -116,14 +116,12 @@ export default function LandingPage() {
 				<div
 					className={`flex flex-col items-center gap-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
 				>
-					<div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg animate-pulse-glow">
-						<span className="text-white font-bold text-3xl font-display">C</span>
-					</div>
+					<img src="/public/icone-quadrado-360.png" alt="CostaWeb Logo" className="w-20 h-20" />
 					<h1 className="text-2xl font-bold font-display text-ink">
 						CostaWeb
 					</h1>
 					<p className="text-muted text-sm text-center">
-						Transformando ideias em realidade digital
+						Seu negócio <span className="text-primary">na internet</span> do jeito certo
 					</p>
 				</div>
 
