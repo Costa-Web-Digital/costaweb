@@ -114,7 +114,7 @@ export default function LandingPage() {
 				className="relative z-10 w-full max-w-sm mx-auto px-6 py-16 flex flex-col items-center gap-8"
 			>
 				<div
-					className="flex flex-col items-center gap-4"
+					className={`flex flex-col items-center gap-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
 				>
 					<img
 						src="/icone-quadrado-360.png"
@@ -160,7 +160,8 @@ export default function LandingPage() {
 				</div>
 
 				<p
-					className="text-muted text-xs mt-8"
+					className={`text-muted text-xs mt-8 transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+					style={{ transitionDelay: `${(LINKS.length + SOCIALS.length + 2) * 100}ms` }}
 				>
 					© {new Date().getFullYear()} CostaWeb
 				</p>
